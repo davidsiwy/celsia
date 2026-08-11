@@ -1,0 +1,749 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CELSIA° | Prefabrikované wellness moduly. Sauna, ledová káď, recovery.</title>
+<meta name="description" content="Finská sauna, ledová káď a recovery lounge v jednom prefabrikovaném objektu. Vyrobeno v Česku, usazeno jeřábem za jeden den. Tři modely od 1 690 000 Kč.">
+<meta property="og:title" content="CELSIA° | Celé wellness na vaší zahradě">
+<meta property="og:description" content="Sauna 90°, káď 3°, recovery. Jeden objekt, jeden den montáže.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --uhel:#171310;
+  --uhel2:#201b16;
+  --uhel3:#282219;
+  --osika:#eae2d3;
+  --dim:#a2967f;
+  --ember:#d2622e;
+  --led:#a4c4d4;
+  --line:rgba(234,226,211,.14);
+  --line-soft:rgba(234,226,211,.08);
+  --maxw:1180px;
+  --pad:clamp(20px,5vw,64px);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{
+  background:var(--uhel);
+  color:var(--osika);
+  font-family:"Instrument Sans",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  background-image:repeating-linear-gradient(90deg,rgba(234,226,211,.012) 0 1px,transparent 1px 7px);
+}
+::selection{background:var(--ember);color:var(--uhel)}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;background:var(--osika);color:var(--uhel);padding:8px 14px;z-index:99}
+:focus-visible{outline:2px solid var(--led);outline-offset:3px}
+
+/* type */
+.serif{font-family:"Fraunces",serif;font-weight:400;letter-spacing:-.01em}
+.mono{font-family:"IBM Plex Mono",monospace;font-size:13px;letter-spacing:.04em}
+h1,h2,h3{font-family:"Fraunces",serif;font-weight:400;line-height:1.08;letter-spacing:-.015em}
+h1{font-size:clamp(42px,7.2vw,92px)}
+h2{font-size:clamp(30px,4.4vw,54px)}
+h3{font-size:clamp(21px,2.4vw,27px)}
+em{font-style:italic;font-weight:340}
+p{color:var(--dim);max-width:58ch}
+p strong{color:var(--osika);font-weight:500}
+
+/* signature: temperature scale */
+.tscale{display:flex;align-items:center;gap:18px;margin:34px 0 8px}
+.tscale .t{font-family:"IBM Plex Mono",monospace;font-size:clamp(20px,2.6vw,30px)}
+.t3{color:var(--led)}
+.t90{color:var(--ember)}
+.tscale .rule{flex:1;height:1px;background:var(--line-soft);position:relative;overflow:hidden}
+.tscale .rule i{position:absolute;inset:0;background:linear-gradient(90deg,var(--led),var(--ember));transform:scaleX(0);transform-origin:left;transition:transform 1.6s cubic-bezier(.2,.7,.2,1) .5s}
+.loaded .tscale .rule i{transform:scaleX(1)}
+.grad-rule{width:56px;height:2px;background:linear-gradient(90deg,var(--led),var(--ember));margin-top:14px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(23,19,16,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-family:"Fraunces",serif;font-size:21px;letter-spacing:.22em;text-decoration:none;font-weight:500}
+.logo sup{color:var(--ember);font-size:.72em;letter-spacing:0}
+.nav nav{display:flex;gap:28px;align-items:center}
+.nav nav a{text-decoration:none;font-size:14.5px;color:var(--dim)}
+.nav nav a:hover{color:var(--osika)}
+.nav .cta{color:var(--uhel);background:var(--osika);padding:9px 18px;border-radius:999px;font-weight:500}
+.nav .cta:hover{background:#fff}
+@media(max-width:840px){.nav nav a:not(.cta){display:none}}
+
+/* hero */
+.hero{padding:clamp(72px,12vh,140px) 0 0}
+.hero h1{max-width:13ch}
+.hero .sub{margin-top:26px;font-size:clamp(17px,1.6vw,19px)}
+.hero .ctas{display:flex;gap:14px;margin:38px 0 64px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:500;font-size:15.5px;padding:14px 26px;border-radius:999px;border:1px solid var(--line);transition:.2s}
+.btn.primary{background:var(--ember);border-color:var(--ember);color:#fff}
+.btn.primary:hover{background:#e0713c}
+.btn.ghost:hover{border-color:var(--osika)}
+.facts{border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft);display:grid;grid-template-columns:repeat(4,1fr)}
+.facts div{padding:20px 8px;border-left:1px solid var(--line-soft)}
+.facts div:first-child{border-left:0}
+.facts b{display:block;font-family:"Fraunces",serif;font-weight:400;font-size:clamp(19px,2vw,24px)}
+.facts span{font-size:13px;color:var(--dim)}
+@media(max-width:700px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0}}
+
+/* sections */
+section{padding:clamp(72px,11vh,130px) 0}
+.head{margin-bottom:clamp(36px,5vh,56px)}
+.head p{margin-top:18px}
+
+/* koncept */
+.triad{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-top:48px}
+.triad article{background:var(--uhel);padding:30px 26px}
+.triad .mono{display:block;font-size:26px;margin-bottom:14px}
+.triad h3{margin-bottom:10px}
+.triad p{font-size:15.5px}
+@media(max-width:820px){.triad{grid-template-columns:1fr}}
+.protocol{margin-top:56px;border:1px solid var(--line);background:var(--uhel2);max-width:520px;padding:26px 28px}
+.protocol .ph{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--line-soft);padding-bottom:14px;margin-bottom:8px}
+.protocol .row{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line-soft);font-family:"IBM Plex Mono",monospace;font-size:14px}
+.protocol .row:last-child{border-bottom:0}
+.protocol .cold{color:var(--led)}
+.protocol .hot{color:var(--ember)}
+.protocol .note{font-size:12.5px;color:var(--dim);margin-top:10px}
+
+/* zóny */
+.zones{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.zones div{background:var(--uhel);padding:24px 22px}
+.zones h3{font-size:19px;margin-bottom:8px}
+.zones p{font-size:14.5px}
+.zones .mono{color:var(--dim);display:block;margin-bottom:12px}
+@media(max-width:820px){.zones{grid-template-columns:1fr 1fr}}
+@media(max-width:540px){.zones{grid-template-columns:1fr}}
+
+/* modely */
+#modely{background:var(--uhel2)}
+.model{display:grid;grid-template-columns:minmax(260px,380px) 1fr;gap:clamp(28px,5vw,72px);padding:clamp(40px,6vh,64px) 0;border-top:1px solid var(--line)}
+.model:last-of-type{border-bottom:1px solid var(--line)}
+.model .plan{background:var(--uhel);border:1px solid var(--line-soft);padding:22px}
+.model .plan .mono{color:var(--dim);margin-bottom:14px;display:block}
+.model h3{font-size:clamp(26px,3vw,36px)}
+.model .dim{margin:6px 0 16px;color:var(--dim);font-size:14px}
+.model ul{list-style:none;margin:18px 0 26px;columns:2;column-gap:40px}
+.model li{padding:7px 0;border-bottom:1px solid var(--line-soft);font-size:15px;break-inside:avoid}
+.model li.plus{color:var(--osika)}
+.model li.plus::before{content:"+ ";color:var(--ember)}
+.price{font-family:"Fraunces",serif;font-size:clamp(24px,2.6vw,32px)}
+.price small{font-family:"Instrument Sans";font-size:13px;color:var(--dim);display:block;margin-top:4px}
+.model .foot{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+@media(max-width:860px){.model{grid-template-columns:1fr}.model ul{columns:1}}
+
+/* b2b band */
+.band{background:var(--uhel3);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.band .inner{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,80px);align-items:center}
+.band .num b{display:block;font-family:"Fraunces",serif;font-size:clamp(30px,3.6vw,44px);font-weight:400}
+.band .num span{color:var(--dim);font-size:14px}
+.band .nums{display:grid;gap:26px}
+@media(max-width:820px){.band .inner{grid-template-columns:1fr}}
+
+/* konfigurátor */
+.config{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,4vw,64px);align-items:start}
+@media(max-width:920px){.config{grid-template-columns:1fr}}
+.fgroup{margin-bottom:38px}
+.fgroup .eyebrow{display:block;margin-bottom:16px}
+.choice{display:block;border:1px solid var(--line);padding:16px 18px;margin-bottom:10px;cursor:pointer;transition:.15s;background:var(--uhel)}
+.choice:hover{border-color:var(--dim)}
+.choice.on{border-color:var(--ember);background:var(--uhel2)}
+.choice input{position:absolute;opacity:0}
+.choice .top{display:flex;justify-content:space-between;gap:14px;align-items:baseline}
+.choice .nm{font-weight:500}
+.choice .pr{font-family:"IBM Plex Mono",monospace;font-size:13.5px;color:var(--dim);white-space:nowrap}
+.choice .ds{font-size:13.5px;color:var(--dim);margin-top:3px}
+.choice.disabled{opacity:.38;pointer-events:none}
+.choice .tag{font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.08em;color:var(--led)}
+.summary{position:sticky;top:88px;border:1px solid var(--line);background:var(--uhel2);padding:28px}
+.summary .row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid var(--line-soft);font-size:14.5px}
+.summary .row span:last-child{font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:nowrap}
+.summary .total{display:flex;justify-content:space-between;align-items:baseline;padding-top:18px}
+.summary .total b{font-family:"Fraunces",serif;font-weight:400;font-size:clamp(24px,2.4vw,30px)}
+.summary .vat{font-size:12.5px;color:var(--dim);margin-top:6px}
+.summary form{margin-top:26px;display:grid;gap:12px}
+.summary input,.summary textarea{width:100%;background:var(--uhel);border:1px solid var(--line);color:var(--osika);padding:12px 14px;font:inherit;font-size:15px}
+.summary textarea{min-height:74px;resize:vertical}
+.summary input::placeholder,.summary textarea::placeholder{color:#6f6656}
+.summary button{background:var(--osika);color:var(--uhel);border:0;padding:15px;font:inherit;font-weight:600;cursor:pointer;border-radius:999px}
+.summary button:hover{background:#fff}
+.summary .legal{font-size:11.5px;color:#6f6656;line-height:1.5}
+
+/* series */
+#series{background:linear-gradient(180deg,var(--uhel2),var(--uhel))}
+#series .inner{border:1px solid var(--line);padding:clamp(36px,6vw,72px);text-align:center}
+#series .mono{color:var(--ember)}
+#series h2{margin:14px auto 18px;max-width:18ch}
+#series p{margin:0 auto}
+
+/* proces */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft)}
+.steps div{background:var(--uhel);padding:26px 22px}
+.steps .mono{color:var(--ember);display:block;margin-bottom:14px}
+.steps h3{font-size:18px;margin-bottom:8px}
+.steps p{font-size:14px}
+@media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}}
+
+/* technika */
+.specs{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line-soft);border:1px solid var(--line-soft);margin-bottom:64px}
+.specs div{background:var(--uhel);padding:20px}
+.specs span{display:block;font-size:12.5px;color:var(--dim);margin-bottom:6px}
+.specs b{font-family:"IBM Plex Mono",monospace;font-weight:500;font-size:14.5px}
+@media(max-width:820px){.specs{grid-template-columns:1fr 1fr}}
+details{border-top:1px solid var(--line-soft)}
+details:last-of-type{border-bottom:1px solid var(--line-soft)}
+summary{cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:"IBM Plex Mono";color:var(--dim)}
+details[open] summary::after{content:"−"}
+details p{padding-bottom:20px;font-size:15px}
+
+/* footer */
+footer{border-top:1px solid var(--line-soft);padding:56px 0 40px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline}
+footer p{font-size:13.5px}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.tscale .rule i{transition:none;transform:scaleX(1)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#konfigurator">Přeskočit na konfigurátor</a>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="logo" href="#top">CELSIA<sup>°</sup></a>
+    <nav>
+      <a href="#koncept">Koncept</a>
+      <a href="#modely">Modely</a>
+      <a href="#series">Series 001</a>
+      <a href="#technika">Technika</a>
+      <a class="cta" href="#konfigurator">Sestavit modul</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero wrap">
+  <p class="eyebrow rv">Prefabrikované wellness moduly · vyrobeno v Česku</p>
+  <h1 class="rv" style="margin-top:22px">Celé wellness na vaší zahradě. <em>Usazené za jeden den.</em></h1>
+  <div class="tscale rv" aria-hidden="true">
+    <span class="t t3">3°</span>
+    <div class="rule"><i></i></div>
+    <span class="t t90">90°</span>
+  </div>
+  <p class="sub rv">Finská sauna, ledová káď a recovery lounge v jednom objektu na ocelovém rámu. Přivezeme hotové, usadíme jeřábem a večer poprvé topíte.</p>
+  <div class="ctas rv">
+    <a class="btn primary" href="#konfigurator">Sestavit modul</a>
+    <a class="btn ghost" href="#modely">Prohlédnout modely</a>
+  </div>
+  <div class="facts rv">
+    <div><b>1 den</b><span>montáž na pozemku</span></div>
+    <div><b>10 až 14 týdnů</b><span>výroba v hale</span></div>
+    <div><b>3 modely</b><span>od 1 690 000 Kč</span></div>
+    <div><b>90 / 3 °C</b><span>sauna a káď</span></div>
+  </div>
+</section>
+
+<section id="koncept">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Koncept</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Dvě teploty. Jeden protokol.</h2>
+      <p>Kontrastní terapie je střídání žáru a chladu v přesných intervalech. Finské studie ji dlouhodobě spojují s lepší regenerací, spánkem a kardiovaskulární kondicí. Celsia ji dává do jednoho objektu a vede vás protokolem krok za krokem.</p>
+    </div>
+    <div class="triad rv">
+      <article>
+        <span class="mono t90">90 °C</span>
+        <h3>Žár</h3>
+        <p>Finská sauna pro čtyři osoby. Thermo osika, panoramatické sklo, kamna 6 až 9 kW. Předehřejete na dálku z aplikace.</p>
+      </article>
+      <article>
+        <span class="mono t3">3 °C</span>
+        <h3>Led</h3>
+        <p>Otužovací káď s chlazením, filtrací a UV lampou. Drží 3 až 5 °C nonstop, bez sypání ledu a bez přípravy.</p>
+      </article>
+      <article>
+        <span class="mono" style="color:var(--osika)">660 nm</span>
+        <h3>Světlo</h3>
+        <p>Recovery lounge s velkoplošným red light panelem a infra lehátkem. Deset minut po kontrastu, se zvukem a aromou.</p>
+      </article>
+    </div>
+    <div class="protocol rv" role="img" aria-label="Ukázka kontrastního protokolu v aplikaci Celsia">
+      <div class="ph">
+        <span class="serif" style="font-size:19px">Večerní kontrast</span>
+        <span class="mono" style="color:var(--dim)">CELSIA APP</span>
+      </div>
+      <div class="row"><span class="hot">Sauna 90°</span><span>12 min</span></div>
+      <div class="row"><span class="cold">Káď 3°</span><span>2 min</span></div>
+      <div class="row"><span>Pauza</span><span>5 min</span></div>
+      <div class="row"><span style="color:var(--dim)">Opakovat</span><span>3 kola</span></div>
+      <p class="note">Řízení teplot, předehřev na dálku a historie sessions. Protokoly sestavené podle vědy, ne podle pocitu.</p>
+    </div>
+  </div>
+</section>
+
+<section id="zony" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Zóny</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Stavebnice, ze které si vyberete.</h2>
+    </div>
+    <div class="zones rv">
+      <div><span class="mono">01</span><h3>Finská sauna</h3><p>Pro 4 osoby, thermo osika, panoramatické sklo. Elektrická kamna ve standardu, na dřevo jako opce.</p></div>
+      <div><span class="mono">02</span><h3>Ledová káď</h3><p>Nerez nebo akrylát, krytá paluba. S chillerem připravená 24/7 na 3 až 5 °C.</p></div>
+      <div><span class="mono">03</span><h3>Recovery lounge</h3><p>Red light panel, infra lehátko, aroma a zvuk. Klidová část mezi koly.</p></div>
+      <div><span class="mono">04</span><h3>Vířivka</h3><p>Zapuštěná do paluby, pro 5 osob. Na vlastní zemní patce, přípojka 400 V.</p></div>
+      <div><span class="mono">05</span><h3>Parní kabina</h3><p>Volitelná zóna pro modely Studio a Grand.</p></div>
+      <div><span class="mono">06</span><h3>Střešní terasa</h3><p>Pochozí střecha se zábradlím, lehátky a bočními schody. Součást modelu Grand.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="modely">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Modely</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Tři sestavy. Jedna konstrukce.</h2>
+      <p>Každý modul je jeden vyrobený kus na ocelovém rámu. Na pozemek přijede hotový, usadí se jeřábem na zemní vruty a tentýž den se zapojí.</p>
+    </div>
+
+    <article class="model rv">
+      <div class="plan">
+        <span class="mono">Půdorys · 3,0 × 4,5 m</span>
+        <svg viewBox="0 0 320 500" fill="none" stroke="#a2967f" stroke-width="1.2" aria-label="Půdorys modelu Kontrast">
+          <rect x="10" y="10" width="300" height="450" stroke="#eae2d3"/>
+          <line x1="10" y1="120" x2="310" y2="120"/>
+          <line x1="10" y1="330" x2="310" y2="330"/>
+          <rect x="14" y="124" width="292" height="202" fill="#d2622e" fill-opacity=".06" stroke="none"/>
+          <circle cx="160" cy="400" r="52" stroke="#a4c4d4" stroke-width="1.5"/>
+          <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#a2967f" stroke="none">
+            <text x="24" y="45">Zádveří</text>
+            <text x="24" y="63">venkovní sprcha</text>
+            <text x="24" y="155" fill="#eae2d3">Sauna 90°</text>
+            <text x="24" y="173">4 osoby</text>
+            <text x="126" y="404" fill="#a4c4d4">Káď 3°</text>
+            <text x="24" y="360">Krytá paluba</text>
+          </g>
+          <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#6f6656" stroke="none">
+            <text x="140" y="490">3,0 m</text>
+            <text x="292" y="240" transform="rotate(90 292 240)" text-anchor="middle">4,5 m</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h3>Celsia Kontrast</h3>
+        <p class="dim">3,0 × 4,5 m · cca 4,5 t · pro pravidelný kontrast</p>
+        <p>Základ metody. Sauna, ledová káď pod krytou palubou, venkovní sprcha a zádveří. Nic navíc, nic nechybí.</p>
+        <ul>
+          <li>Finská sauna pro 4 osoby</li>
+          <li>Ledová káď, nerez</li>
+          <li>Venkovní sprcha</li>
+          <li>Zádveří s úložným prostorem</li>
+          <li>Elektrická kamna 6 kW</li>
+          <li>Opláštění dle výběru</li>
+        </ul>
+        <div class="foot">
+          <div class="price">1 690 000 Kč<small>vč. DPH, dopravy a usazení do 150 km od Prahy</small></div>
+          <a class="btn ghost" href="#konfigurator" data-pick="kontrast">Sestavit Kontrast</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="model rv">
+      <div class="plan">
+        <span class="mono">Půdorys · 3,5 × 6,5 m</span>
+        <svg viewBox="0 0 320 620" fill="none" stroke="#a2967f" stroke-width="1.2" aria-label="Půdorys modelu Studio">
+          <rect x="10" y="10" width="300" height="580" stroke="#eae2d3"/>
+          <line x1="10" y1="110" x2="310" y2="110"/>
+          <line x1="10" y1="280" x2="310" y2="280"/>
+          <line x1="10" y1="465" x2="310" y2="465"/>
+          <rect x="14" y="284" width="292" height="177" fill="#d2622e" fill-opacity=".06" stroke="none"/>
+          <circle cx="160" cy="527" r="46" stroke="#a4c4d4" stroke-width="1.5"/>
+          <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#a2967f" stroke="none">
+            <text x="24" y="45">Zádveří</text>
+            <text x="24" y="63">venkovní sprcha</text>
+            <text x="24" y="315" fill="#eae2d3">Sauna 90°</text>
+            <text x="24" y="145" fill="#eae2d3">Recovery lounge</text>
+            <text x="24" y="163">red light · infra</text>
+            <text x="126" y="531" fill="#a4c4d4">Káď 3°</text>
+          </g>
+          <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#6f6656" stroke="none">
+            <text x="140" y="612">3,5 m</text>
+            <text x="292" y="300" transform="rotate(90 292 300)" text-anchor="middle">6,5 m</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h3>Celsia Studio</h3>
+        <p class="dim">3,5 × 6,5 m · cca 6 t · kompletní longevity sestava</p>
+        <p>Kontrast plus regenerace. Recovery lounge s červeným světlem a infra lehátkem, chlazení kádě nonstop a chytré ovládání ve standardu.</p>
+        <ul>
+          <li>Vše z modelu Kontrast</li>
+          <li class="plus">Recovery lounge</li>
+          <li class="plus">Red light panel a infra lehátko</li>
+          <li class="plus">Chiller 24/7 ve standardu</li>
+          <li class="plus">Celsia app a smart ovládání</li>
+          <li class="plus">Kamna 9 kW</li>
+        </ul>
+        <div class="foot">
+          <div class="price">2 690 000 Kč<small>vč. DPH, dopravy a usazení do 150 km od Prahy</small></div>
+          <a class="btn ghost" href="#konfigurator" data-pick="studio">Sestavit Studio</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="model rv">
+      <div class="plan">
+        <span class="mono">Půdorys · 3,5 × 9,0 m</span>
+        <svg viewBox="0 0 320 760" fill="none" stroke="#a2967f" stroke-width="1.2" aria-label="Půdorys modelu Grand">
+          <rect x="10" y="10" width="300" height="730" stroke="#eae2d3"/>
+          <line x1="10" y1="95" x2="310" y2="95"/>
+          <line x1="10" y1="250" x2="310" y2="250"/>
+          <line x1="10" y1="425" x2="310" y2="425"/>
+          <line x1="10" y1="545" x2="310" y2="545"/>
+          <rect x="14" y="254" width="292" height="167" fill="#d2622e" fill-opacity=".06" stroke="none"/>
+          <circle cx="105" cy="485" r="40" stroke="#a4c4d4" stroke-width="1.5"/>
+          <circle cx="160" cy="642" r="62" stroke="#eae2d3" stroke-width="1.5"/>
+          <g font-family="IBM Plex Mono,monospace" font-size="12" fill="#a2967f" stroke="none">
+            <text x="24" y="40">Zádveří · sprcha</text>
+            <text x="24" y="285" fill="#eae2d3">Sauna 90°</text>
+            <text x="24" y="130" fill="#eae2d3">Recovery lounge</text>
+            <text x="24" y="148">red light · infra</text>
+            <text x="76" y="489" fill="#a4c4d4">Káď 3°</text>
+            <text x="200" y="470">Parní kabina</text>
+            <text x="200" y="486">(opce)</text>
+            <text x="118" y="646" fill="#eae2d3">Vířivka 37°</text>
+            <text x="120" y="664">5 osob</text>
+          </g>
+          <g font-family="IBM Plex Mono,monospace" font-size="10" fill="#6f6656" stroke="none">
+            <text x="140" y="752">3,5 m</text>
+            <text x="292" y="370" transform="rotate(90 292 370)" text-anchor="middle">9,0 m</text>
+            <text x="24" y="726">+ pochozí střešní terasa</text>
+          </g>
+        </svg>
+      </div>
+      <div>
+        <h3>Celsia Grand</h3>
+        <p class="dim">3,5 × 9,0 m · cca 8 t · privátní wellness dům</p>
+        <p>Kompletní wellness pro rodinu i pronájem. K longevity sestavě přibývá zapuštěná vířivka pro pět osob a pochozí střešní terasa s lehátky.</p>
+        <ul>
+          <li>Vše z modelu Studio</li>
+          <li class="plus">Zapuštěná vířivka pro 5 osob</li>
+          <li class="plus">Pochozí střešní terasa</li>
+          <li class="plus">Boční schodiště a zábradlí</li>
+          <li class="plus">Příprava pro parní kabinu</li>
+          <li class="plus">Venkovní osvětlení palub</li>
+        </ul>
+        <div class="foot">
+          <div class="price">3 990 000 Kč<small>vč. DPH, dopravy a usazení do 150 km od Prahy</small></div>
+          <a class="btn ghost" href="#konfigurator" data-pick="grand">Sestavit Grand</a>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap inner">
+    <div class="rv">
+      <p class="eyebrow">Pro chaty a Airbnb</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Modul, který se splácí sám.</h2>
+      <p style="margin-top:16px">Wellness je dnes nejsilnější filtr při výběru ubytování. Objekt s vlastní saunou a kádí si říká o vyšší cenu za noc a je obsazený i mimo sezónu. Usazení za den znamená, že nepřijdete o jediný rezervovaný víkend.</p>
+    </div>
+    <div class="nums rv">
+      <div class="num"><b>+20 až 35 %</b><span>běžné navýšení ceny za noc u objektů se saunou</span></div>
+      <div class="num"><b>1 den</b><span>výpadek provozu při instalaci</span></div>
+      <div class="num"><b>0 m²</b><span>zastavěné plochy vaší chaty, modul stojí vedle</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="konfigurator">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Konfigurátor</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Sestavte si svůj modul.</h2>
+      <p>Cena se počítá průběžně. Odesláním poptávky se k ničemu nezavazujete, ozveme se do 24 hodin s termínem a dalším postupem.</p>
+    </div>
+    <div class="config">
+      <div class="rv">
+        <div class="fgroup" id="g-model">
+          <span class="eyebrow">1 · Model</span>
+          <label class="choice" data-model="kontrast">
+            <input type="radio" name="model" value="kontrast">
+            <span class="top"><span class="nm">Celsia Kontrast</span><span class="pr">1 690 000 Kč</span></span>
+            <span class="ds">Sauna, ledová káď, sprcha, zádveří · 3,0 × 4,5 m</span>
+          </label>
+          <label class="choice" data-model="studio">
+            <input type="radio" name="model" value="studio" checked>
+            <span class="top"><span class="nm">Celsia Studio</span><span class="pr">2 690 000 Kč</span></span>
+            <span class="ds">Plus recovery lounge, chiller a smart ovládání · 3,5 × 6,5 m</span>
+          </label>
+          <label class="choice" data-model="grand">
+            <input type="radio" name="model" value="grand">
+            <span class="top"><span class="nm">Celsia Grand</span><span class="pr">3 990 000 Kč</span></span>
+            <span class="ds">Plus vířivka pro 5 osob a střešní terasa · 3,5 × 9,0 m</span>
+          </label>
+        </div>
+        <div class="fgroup" id="g-oplasteni">
+          <span class="eyebrow">2 · Opláštění</span>
+          <label class="choice on" data-clad="thermo">
+            <input type="radio" name="clad" value="thermo" checked>
+            <span class="top"><span class="nm">Thermowood</span><span class="pr">v ceně</span></span>
+            <span class="ds">Teplá severská borovice, přirozeně stárne do šeda</span>
+          </label>
+          <label class="choice" data-clad="shou">
+            <input type="radio" name="clad" value="shou">
+            <span class="top"><span class="nm">Opálené dřevo</span><span class="pr">+ 85 000 Kč</span></span>
+            <span class="ds">Shou sugi ban, hluboká černá struktura, bezúdržbové</span>
+          </label>
+          <label class="choice" data-clad="zrcadlo">
+            <input type="radio" name="clad" value="zrcadlo">
+            <span class="top"><span class="nm">Zrcadlové sklo</span><span class="pr">+ 140 000 Kč</span></span>
+            <span class="ds">Fasádní panely, modul zmizí v zahradě</span>
+          </label>
+        </div>
+        <div class="fgroup" id="g-opce">
+          <span class="eyebrow">3 · Opce</span>
+          <label class="choice" data-opt="chiller">
+            <input type="checkbox" name="opt" value="chiller">
+            <span class="top"><span class="nm">Chiller 24/7</span><span class="pr" data-pr>+ 96 000 Kč</span></span>
+            <span class="ds">Káď drží 3 až 5 °C nonstop, bez ledu a bez čekání</span>
+          </label>
+          <label class="choice" data-opt="parni">
+            <input type="checkbox" name="opt" value="parni">
+            <span class="top"><span class="nm">Parní kabina</span><span class="pr">+ 240 000 Kč</span></span>
+            <span class="ds">Samostatná parní zóna, pouze Studio a Grand</span>
+          </label>
+          <label class="choice" data-opt="drevo">
+            <input type="checkbox" name="opt" value="drevo">
+            <span class="top"><span class="nm">Kamna na dřevo</span><span class="pr">+ 38 000 Kč</span></span>
+            <span class="ds">Místo elektrických, s komínem a přívodem vzduchu</span>
+          </label>
+        </div>
+      </div>
+
+      <aside class="summary rv" aria-live="polite">
+        <p class="eyebrow" style="margin-bottom:14px">Vaše sestava</p>
+        <div id="sumrows"></div>
+        <div class="total"><span>Celkem</span><b id="total">2 690 000 Kč</b></div>
+        <p class="vat">Cena vč. DPH, dopravy a usazení jeřábem do 150 km od Prahy. Záloha 30 % při objednávce.</p>
+        <form action="https://formsubmit.co/hello@gallerypoint.cz" method="POST" id="leadform">
+          <input type="hidden" name="_subject" value="Poptávka CELSIA">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Konfigurace" id="confField">
+          <input type="text" name="Jméno" placeholder="Jméno a příjmení" required>
+          <input type="tel" name="Telefon" placeholder="Telefon" required>
+          <input type="email" name="Email" placeholder="E‑mail" required>
+          <input type="text" name="Místo" placeholder="Obec, kde bude modul stát">
+          <textarea name="Zpráva" placeholder="Poznámka, termín, dotaz"></textarea>
+          <button type="submit">Odeslat poptávku</button>
+          <p class="legal">Odesláním souhlasíte se zpracováním údajů pro vyřízení poptávky. Nic víc s nimi neděláme.</p>
+        </form>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="series">
+  <div class="wrap">
+    <div class="inner rv">
+      <p class="mono">SERIES 001 · ROČNÍK 2026</p>
+      <h2>Dvacet číslovaných kusů ročně.</h2>
+      <p>Každý modul první série nese číslovanou plaketu, výrobní list s podpisem party, která ho postavila, a prioritní servisní linku. Až se kapacita naplní, další kusy jdou do ročníku 2027.</p>
+      <a class="btn primary" style="margin-top:30px" href="#konfigurator">Rezervovat výrobní slot</a>
+    </div>
+  </div>
+</section>
+
+<section id="proces" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Jak to probíhá</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Od poptávky k první sauně.</h2>
+    </div>
+    <div class="steps rv">
+      <div><span class="mono">01</span><h3>Konfigurace</h3><p>Sestavíte modul, projdeme spolu pozemek, přípojky a přístup pro jeřáb. Záloha 30 % rezervuje výrobní slot.</p></div>
+      <div><span class="mono">02</span><h3>Výroba</h3><p>10 až 14 týdnů v hale. Modul vzniká kompletně pod střechou, včetně rozvodů a interiéru.</p></div>
+      <div><span class="mono">03</span><h3>Usazení</h3><p>Přeprava na podvalníku, usazení jeřábem na zemní vruty, připojení. Jeden den na pozemku.</p></div>
+      <div><span class="mono">04</span><h3>První protokol</h3><p>Zaškolení, nastavení aplikace a první společný kontrast. Od té chvíle jedete sami.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="technika" style="padding-top:0">
+  <div class="wrap">
+    <div class="head rv">
+      <p class="eyebrow">Technika</p>
+      <div class="grad-rule"></div>
+      <h2 style="margin-top:22px">Postavené jako stroj.</h2>
+      <p>Ocelový rám, zateplené panely, rozvody vedené v konstrukci. Stejná technologie, na které stavíme mobilní domy, jen s wellness výbavou.</p>
+    </div>
+    <div class="specs rv">
+      <div><span>Konstrukce</span><b>ocelový rám, panely</b></div>
+      <div><span>Šířka</span><b>3,0 až 3,5 m</b></div>
+      <div><span>Délka</span><b>4,5 až 9,0 m</b></div>
+      <div><span>Hmotnost</span><b>4 až 8 t</b></div>
+      <div><span>Založení</span><b>zemní vruty / patky</b></div>
+      <div><span>Přípojka</span><b>400 V, 3× 25 až 32 A</b></div>
+      <div><span>Sauna</span><b>90 °C, 6 až 9 kW</b></div>
+      <div><span>Káď</span><b>3 až 5 °C, UV filtrace</b></div>
+    </div>
+    <div class="rv">
+      <details>
+        <summary>Potřebuju stavební povolení?</summary>
+        <p>Modul je výrobek usazený na zemní vruty, ne klasická stavba. Režim umístění závisí na velikosti modulu a konkrétním pozemku. Projdeme to s vámi před podpisem, patří to k přípravě zakázky.</p>
+      </details>
+      <details>
+        <summary>Jaké přípojky musím mít?</summary>
+        <p>Elektro 400 V s jističem 3× 25 až 32 A podle sestavy, voda a odpad pro sprchu a vířivku. Samotná káď funguje i bez trvalé přípojky vody.</p>
+      </details>
+      <details>
+        <summary>Funguje to v zimě?</summary>
+        <p>Modul je celoročně zateplený a rozvody jsou vedené v temperované konstrukci. Zima je pro kontrast nejlepší sezóna.</p>
+      </details>
+      <details>
+        <summary>Jak probíhá servis?</summary>
+        <p>Roční servisní prohlídka kamen, chlazení a filtrace. Na konstrukci dáváme záruku 5 let, na technologie 2 roky.</p>
+      </details>
+      <details>
+        <summary>Co když se pak přestěhuju?</summary>
+        <p>Modul se dá stejným způsobem zvednout a převézt jinam. Je to jeho přirozená vlastnost, ne kompromis.</p>
+      </details>
+      <details>
+        <summary>Kolik stojí provoz?</summary>
+        <p>Záleží na frekvenci saunování a sestavě. Kamna 6 až 9 kW topí jen během session, chiller a vířivka jedou úsporně na termostat. Konkrétní odhad připravíme ke konfiguraci.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="logo" href="#top">CELSIA<sup>°</sup></a>
+    <p>Prefabrikované wellness moduly. Navrženo a vyrobeno v Česku.</p>
+    <p><a href="#konfigurator" style="color:var(--osika)">Nezávazná poptávka</a></p>
+    <p class="mono" style="color:#6f6656">© 2026 Celsia</p>
+  </div>
+</footer>
+
+<script>
+const PRICING = {
+  models: {
+    kontrast: { name: "Celsia Kontrast", base: 1690000, chillerStd: false },
+    studio:   { name: "Celsia Studio",   base: 2690000, chillerStd: true },
+    grand:    { name: "Celsia Grand",    base: 3990000, chillerStd: true }
+  },
+  options: {
+    chiller: { label: "Chiller 24/7",   price: 96000,  models: ["kontrast"] },
+    parni:   { label: "Parní kabina",   price: 240000, models: ["studio", "grand"] },
+    drevo:   { label: "Kamna na dřevo", price: 38000,  models: ["kontrast", "studio", "grand"] }
+  },
+  cladding: {
+    thermo:  { label: "Thermowood",     price: 0 },
+    shou:    { label: "Opálené dřevo",  price: 85000 },
+    zrcadlo: { label: "Zrcadlové sklo", price: 140000 }
+  }
+};
+
+const kc = n => n.toLocaleString("cs-CZ") + " Kč";
+const $  = s => document.querySelector(s);
+const $$ = s => Array.from(document.querySelectorAll(s));
+
+function currentModel(){ return $('input[name="model"]:checked').value; }
+function currentClad(){ return $('input[name="clad"]:checked').value; }
+
+function refresh(){
+  const m = currentModel();
+  const model = PRICING.models[m];
+  let total = model.base;
+  const rows = [[model.name, kc(model.base)]];
+
+  // availability
+  $$('[data-opt]').forEach(l => {
+    const key = l.dataset.opt;
+    const opt = PRICING.options[key];
+    const cb = l.querySelector("input");
+    const avail = opt.models.includes(m);
+    const included = key === "chiller" && model.chillerStd;
+    l.classList.toggle("disabled", !avail && !included);
+    if (included){
+      l.classList.add("disabled");
+      l.querySelector("[data-pr], .pr").innerHTML = '<span class="tag">VE STANDARDU</span>';
+      cb.checked = false;
+    } else if (key === "chiller"){
+      l.querySelector(".pr").textContent = "+ " + kc(opt.price);
+    }
+    if (!avail && !included) cb.checked = false;
+  });
+
+  // cladding
+  const clad = PRICING.cladding[currentClad()];
+  if (clad.price > 0){ total += clad.price; rows.push([clad.label, "+ " + kc(clad.price)]); }
+  else rows.push([clad.label, "v ceně"]);
+
+  // options
+  $$('[data-opt] input:checked').forEach(cb => {
+    const opt = PRICING.options[cb.closest("[data-opt]").dataset.opt];
+    total += opt.price;
+    rows.push([opt.label, "+ " + kc(opt.price)]);
+  });
+  if (PRICING.models[m].chillerStd) rows.push(["Chiller 24/7", "ve standardu"]);
+
+  $("#sumrows").innerHTML = rows.map(r =>
+    `<div class="row"><span>${r[0]}</span><span>${r[1]}</span></div>`).join("");
+  $("#total").textContent = kc(total);
+  $("#confField").value = rows.map(r => r[0] + " (" + r[1] + ")").join(", ") + " · Celkem " + kc(total);
+
+  $$(".choice").forEach(l => {
+    const input = l.querySelector("input");
+    l.classList.toggle("on", input.checked);
+  });
+}
+
+$$('.choice input').forEach(i => i.addEventListener("change", refresh));
+
+$$("[data-pick]").forEach(a => a.addEventListener("click", () => {
+  $(`input[name="model"][value="${a.dataset.pick}"]`).checked = true;
+  refresh();
+}));
+
+$("#leadform").addEventListener("submit", refresh);
+
+// reveal on scroll
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!reduce && "IntersectionObserver" in window){
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); }
+  }), { threshold: .12 });
+  $$(".rv").forEach(el => io.observe(el));
+} else {
+  $$(".rv").forEach(el => el.classList.add("in"));
+}
+
+addEventListener("load", () => document.body.classList.add("loaded"));
+refresh();
+</script>
+</body>
+</html>

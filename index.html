@@ -95,6 +95,11 @@ p strong{color:var(--osika);font-weight:500}
 .facts span{font-size:13px;color:var(--dim)}
 @media(max-width:700px){.facts{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0}}
 
+/* fotky */
+.photoblock{margin-top:clamp(40px,6vh,64px);border:1px solid var(--line-soft)}
+.photoblock img{width:100%;height:clamp(260px,46vw,520px);object-fit:cover;display:block}
+.photoblock figcaption{padding:14px 20px;font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--dim);border-top:1px solid var(--line-soft)}
+
 /* sections */
 section{padding:clamp(72px,11vh,130px) 0}
 .head{margin-bottom:clamp(36px,5vh,56px)}
@@ -293,6 +298,10 @@ footer p{font-size:13.5px}
     <div><b>10 kusů ročně</b><span>víc jich nevyrobíme</span></div>
     <div><b>30 dní</b><span>na vrácení</span></div>
   </div>
+  <figure class="photoblock rv">
+    <img src="img/hero-kontrast.jpg" alt="Modul Celsia v zahradě za soumraku, prosklená sauna a otužovací káď na kryté palubě, stoupá pára">
+    <figcaption>Vizualizace · sauna a krytá paluba s kádí, opláštění opálené dřevo</figcaption>
+  </figure>
 </section>
 
 <section id="koncept">
@@ -508,6 +517,11 @@ footer p{font-size:13.5px}
         </div>
       </div>
     </article>
+
+    <figure class="photoblock rv">
+      <img src="img/grand-terrace.jpg" alt="Modul Celsia Grand s vířivkou na terase, saunou a recovery loungí s red light, nahoře pochozí střešní terasa s lehátky">
+      <figcaption>Vizualizace · model Grand, vířivka, sauna, recovery lounge a střešní terasa</figcaption>
+    </figure>
 
     <article class="model rv">
       <div class="plan">

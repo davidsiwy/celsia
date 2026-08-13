@@ -250,3 +250,9 @@ details[open] summary > span[aria-hidden]{display:inline-block;transform:rotate(
 /* radky souhrnu (generuje script.js) */
 .sumrow{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(223,233,232,.08);font-size:14.5px}
 .sumprice{font-family:'Martian Mono',monospace;font-size:12.5px;white-space:nowrap;color:var(--body)}
+/* logo Ohrev: Unbounded, vahy po literach 200 az 900 */
+.logo-word{font-family:'Unbounded',sans-serif;font-size:20px;line-height:1;color:var(--ink);display:inline-flex}
+.w200{font-weight:200}.w280{font-weight:280}.w380{font-weight:380}.w520{font-weight:520}.w700{font-weight:700}.w900{font-weight:900}
+.footer-logo{font-family:'Unbounded',sans-serif;font-size:clamp(52px,12vw,180px);line-height:1;letter-spacing:.01em;white-space:nowrap;color:var(--ink)}
+.temp-scale{margin:18px 0 0;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.4em;color:var(--faint)}
+.ts-ice{color:var(--ice)}.ts-ember{color:var(--orange)}

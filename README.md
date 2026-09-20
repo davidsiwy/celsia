@@ -13,9 +13,17 @@ Statický web, GitHub Pages servíruje kořen repa.
 
 Hero → dva promo bannery → Modely (karty s půdorysy a cenou) → Často vás zajímá (bento) → Jak vypadá usazení + 4 kroky → 7 důvodů → Koncept + čísla → Co je uvnitř → Srovnání přístavba vs modul → Pro koho → Series 001 → Pro pronájem (kalkulačka) → Konfigurátor + V ceně → Garance → Otázky + Technika → patička.
 
+## SEO
+
+- `<head>`: title a description s klíčovými slovy, canonical, hreflang cs/en/x-default, Open Graph, Twitter card, robots
+- JSON-LD v každé stránce: Organization (telefon), WebSite, WebPage, 4× Product s cenou v CZK, FAQPage (generuje se z FAQ sekce, při změně otázek přegenerovat)
+- `sitemap.xml` (s hreflang a obrázky) a `robots.txt`
+- Všechny obrázky mají popisný `alt`, rozměry a `loading="lazy"` (hero má `fetchpriority="high"`)
+- Po nasazení: přidat web do Google Search Console a odeslat sitemap, jinak Google čeká na vlastní objevení
+
 ## Co doplnit, až bude
 
 - Fotky: zatím jen dva rendery, používají se opakovaně (bento, důvody, zóny). Doplnit detaily kádě, sauny, recovery, usazení jeřábem.
 - Video usazení do sekce „Jak vypadá usazení modulu".
 - Reference a hodnocení, až budou první instalace.
-- Telefon a e-mail do patičky, až bude doména.
+- E-mail do patičky, až bude doména (telefon +420 602 175 653 už tam je).

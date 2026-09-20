@@ -67,6 +67,8 @@ p{margin:0}
 .nav{display:flex;align-items:center;gap:26px;font-size:14px;font-weight:600}
 .nav a:hover{color:var(--blue)}
 .hdr-right{display:flex;align-items:center;gap:14px}
+.tel{font-family:var(--head);font-weight:600;font-size:13px;white-space:nowrap}
+.tel:hover{color:var(--blue)}
 .lang{font-size:13px;font-weight:600;color:var(--muted)}
 .lang a{padding:2px}
 .lang a.on{color:var(--ink)}
@@ -82,8 +84,8 @@ p{margin:0}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.66) 0%,rgba(0,0,0,.28) 50%,rgba(0,0,0,.05) 100%)}
 .hero-in{position:absolute;inset:0;display:flex;align-items:center;z-index:2;color:#fff}
 .hero .eyebrow{color:rgba(255,255,255,.8)}
-.hero h1{font-size:clamp(30px,4.2vw,54px);margin:10px 0 6px;max-width:640px}
-.hero .sub{font-family:var(--head);font-weight:400;font-size:clamp(15px,1.5vw,20px);color:rgba(255,255,255,.88)}
+.hero h1{font-size:clamp(28px,3.6vw,48px);margin:10px 0 8px;max-width:720px}
+.hero .sub{font-family:var(--head);font-weight:400;font-size:clamp(14px,1.4vw,19px);color:rgba(255,255,255,.88);max-width:640px}
 .hero-cta{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
 
 /* promo banners */
@@ -330,7 +332,7 @@ input[type=range]{width:100%;accent-color:var(--blue);margin-top:8px}
 
 /* responsive */
 @media (max-width:1040px){
-  .nav,.hdr .btn,.lang{display:none}
+  .nav,.hdr .btn,.lang,.hdr .tel{display:none}
   .burger{display:flex}
   .bento{grid-template-columns:1fr 1fr;grid-template-rows:200px 200px 200px}
   .tile.big{grid-column:span 2;grid-row:span 1}

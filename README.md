@@ -1,12 +1,13 @@
-# Celsia web
+# Dopřáno web (dříve Celsia)
 
 Statický web, GitHub Pages servíruje kořen repa.
 
 - `index.html` čeština, `en.html` angličtina
 - `style.css` společné styly (design systém: bílé a černé sekce, modrý akcent `--blue`, nadpisy Unbounded, text Manrope, rádius 16 px, pill tlačítka)
 - `script.js` konfigurátor, kalkulačka návratnosti, předvolba modelu z karet (`data-goto-model`), šipky karuselů (`data-scroll`), mobilní menu, klávesnice a `aria-pressed`
-- Ceny, modely a texty konfigurátoru: objekt `window.CELSIA` na konci každé HTML stránky (každý jazyk má vlastní)
+- Ceny, modely a texty konfigurátoru: objekt `window.CELSIA` (interní název proměnné, značka je Dopřáno) na konci každé HTML stránky (každý jazyk má vlastní)
 - `img/` fotografie
+- Značka: Dopřáno (doprano.cz, zatím na GitHub Pages). Logo: modrý kruh s bílou tečkou + „dopřáno" v Unbounded
 - Formulář: FormSubmit na hello@gallerypoint.cz, vyměnit až bude doména. První odeslání vyžaduje potvrzení adresy.
 
 ## Sekce (shora dolů)

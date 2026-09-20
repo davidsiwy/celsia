@@ -4,636 +4,621 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<title>Celsia — Hotové wellness za jeden den</title>
+<title>Celsia — Prémiové venkovní wellness moduly</title>
 <meta name="description" content="Prefabrikované wellness moduly: finská sauna, ledová káď a recovery v jednom objektu. Usazení za den, pevná cena, 30 dní na vrácení.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Martian+Mono:wght@400;500;600&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-<style>
-body{margin:0;background:#fff;color:#0d2125;font-family:"Familjen Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-size:17px}
-a{color:#0d2125;text-decoration:none}a:hover{color:#f0561d}
-::selection{background:#f0561d;color:#fff}
-summary::-webkit-details-marker{display:none}
-input[type=range]{accent-color:#f0561d}
-html{scroll-behavior:smooth}
-section[id]{scroll-margin-top:76px}
-@media (max-width:1040px){[data-m~="nav"]{display:none!important}}
-@media (max-width:760px){
-[data-m~="stack"]{grid-template-columns:1fr!important}
-[data-m~="stack2"]{grid-template-columns:1fr 1fr!important}
-[data-m~="hide"]{display:none!important}
-[data-m~="unstick"]{position:static!important}
-[data-m~="stats"]>div{border-left:none!important;border-top:1px solid rgba(13,33,37,.14);padding:16px 12px 16px 0!important}
-[data-m~="stats"]>div:nth-child(-n+2){border-top:none}
-[data-m~="stats"]>div:nth-child(2n){border-left:1px solid rgba(13,33,37,.14)!important;padding-left:14px!important}
-[data-m~="trow"]{grid-template-columns:1fr 1fr!important}
-[data-m~="trow"]>div{padding:10px 14px 12px 0!important}
-[data-m~="trow"]>div:first-child{grid-column:1/-1;padding:14px 0 2px!important}
-[data-m~="zona"]{grid-template-columns:auto 1fr!important;row-gap:4px!important}
-[data-m~="zona"]>p{grid-column:1/-1}
-[data-m~="cta"]{padding:9px 12px!important;letter-spacing:.06em!important}
-}
-</style>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div>
-  <header data-screen-label="Navigace" style="position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(14px);border-bottom:1px solid rgba(13,33,37,.12)">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px);display:flex;align-items:center;justify-content:space-between;height:66px">
-      <a href="#top" style="display:flex;align-items:center;gap:10px">
-        <span style="font-family:'Unbounded',sans-serif;font-size:18px;line-height:1;color:#0d2125"><span style="font-weight:200">c</span><span style="font-weight:280">e</span><span style="font-weight:380">l</span><span style="font-weight:520">s</span><span style="font-weight:700">i</span><span style="font-weight:900">a</span></span>
+
+<header class="hdr">
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Celsia">
+      <span class="logo-mark">°</span>
+      <span class="logo-type">celsi<b>a</b></span>
+    </a>
+    <nav class="nav">
+      <a href="#modely">Modely</a>
+      <a href="#koncept">Koncept</a>
+      <a href="#pronajem">Pro pronájem</a>
+      <a href="#garance">Garance</a>
+      <a href="#faq">Otázky</a>
+    </nav>
+    <div class="hdr-right">
+      <span class="lang"><a href="index.html" class="on">CZ</a> / <a href="en.html">EN</a></span>
+      <a href="#konfigurator" class="btn btn-blue btn-sm">Sestavit modul</a>
+      <button class="burger" aria-label="Menu" data-burger>MENU <span></span></button>
+    </div>
+  </div>
+  <div class="mnav" data-mnav>
+    <a href="#modely">Modely</a>
+    <a href="#koncept">Koncept</a>
+    <a href="#pronajem">Pro pronájem</a>
+    <a href="#konfigurator">Konfigurátor</a>
+    <a href="#garance">Garance</a>
+    <a href="#faq">Otázky</a>
+    <a href="en.html">English</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <img src="img/hero-kontrast.jpg" alt="Wellness modul Celsia se saunou a ledovou kádí na zahradě">
+  <div class="hero-in">
+    <div class="wrap">
+      <div class="eyebrow">Prémiové</div>
+      <h1>Venkovní wellness moduly</h1>
+      <div class="sub">Vyrobeno v Česku · Usazení za jeden den</div>
+      <div class="hero-cta">
+        <a href="#modely" class="btn btn-blue">Zobrazit modely</a>
+        <a href="#konfigurator" class="btn btn-outline-w">Sestavit modul</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROMO BANNERS -->
+<section class="wrap">
+  <div class="promos">
+    <a href="#modely" class="promo">
+      <img src="img/grand-terrace.jpg" alt="Celsia Grand se střešní terasou">
+      <div class="promo-in">
+        <div class="eyebrow">Novinka</div>
+        <h3>Privátní wellness dům<br><span class="accent">Grand</span></h3>
+        <p class="small">Sauna, ledová káď, recovery, vířivka a pochozí střešní terasa v jednom kuse.</p>
+        <span class="btn btn-outline-w btn-sm">Zobrazit více</span>
+      </div>
+    </a>
+    <a href="#konfigurator" class="promo" data-goto-model="host">
+      <img src="img/hero-kontrast.jpg" alt="Celsia Host">
+      <div class="promo-in">
+        <div class="eyebrow">Series 001 · Ročník 2026</div>
+        <h3>Představujeme<br>Celsia Host <span class="accent">949 000 Kč</span></h3>
+        <p class="small">Sauna a káď na otevřené palubě, stavěné na pronájem. Vč. DPH, dopravy a usazení.</p>
+        <span class="btn btn-outline-w btn-sm">Sestavit Host</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- MODELS -->
+<section id="modely" class="sec sec-gray" style="margin-top:56px">
+  <div class="wrap">
+    <div class="models-head">
+      <div>
+        <h2>Modely</h2>
+        <p class="muted">Čtyři sestavy, jedna konstrukce</p>
+      </div>
+      <div>
+        <div class="cards-scroll" data-scroll="models">
+          <a href="#konfigurator" class="pcard" data-goto-model="host">
+            <div class="plan">
+              <svg viewBox="0 0 160 100" aria-hidden="true">
+                <rect x="1" y="1" width="158" height="98" rx="4" fill="#fff" stroke="#111" stroke-width="2"/>
+                <rect x="4" y="4" width="66" height="92" fill="#f6e7c9"/>
+                <line x1="70" y1="4" x2="70" y2="96" stroke="#111" stroke-width="2"/>
+                <rect x="72" y="4" width="84" height="92" fill="#e9e2d6"/>
+                <circle cx="124" cy="52" r="20" fill="#bfe3fb" stroke="#111" stroke-width="2"/>
+                <circle cx="86" cy="18" r="4" fill="none" stroke="#111" stroke-width="1.5"/>
+                <text x="37" y="52" font-size="9" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">SAUNA</text>
+                <text x="124" y="86" font-size="8" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">KÁĎ · PALUBA</text>
+              </svg>
+            </div>
+            <span class="badge">Volný slot 2026</span>
+            <h3>Celsia Host</h3>
+            <div class="dim">2,5 × 4,0 m · pro pronájmy</div>
+            <div class="price">949 000 Kč</div>
+          </a>
+          <a href="#konfigurator" class="pcard" data-goto-model="kontrast">
+            <div class="plan">
+              <svg viewBox="0 0 160 120" aria-hidden="true">
+                <rect x="1" y="1" width="158" height="118" rx="4" fill="#fff" stroke="#111" stroke-width="2"/>
+                <rect x="4" y="4" width="36" height="112" fill="#eef0f3"/>
+                <line x1="40" y1="4" x2="40" y2="116" stroke="#111" stroke-width="2"/>
+                <rect x="42" y="4" width="62" height="112" fill="#f6e7c9"/>
+                <line x1="104" y1="4" x2="104" y2="116" stroke="#111" stroke-width="2"/>
+                <rect x="106" y="4" width="50" height="112" fill="#e9e2d6"/>
+                <circle cx="131" cy="60" r="19" fill="#bfe3fb" stroke="#111" stroke-width="2"/>
+                <circle cx="22" cy="18" r="4" fill="none" stroke="#111" stroke-width="1.5"/>
+                <text x="73" y="62" font-size="9" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">SAUNA</text>
+                <text x="131" y="104" font-size="8" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">KÁĎ</text>
+                <text x="22" y="106" font-size="7" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">ŠATNA</text>
+              </svg>
+            </div>
+            <span class="badge">Volný slot 2026</span>
+            <h3>Celsia Kontrast</h3>
+            <div class="dim">3,0 × 4,0 m · domácí wellness</div>
+            <div class="price">1 190 000 Kč</div>
+          </a>
+          <a href="#konfigurator" class="pcard" data-goto-model="studio">
+            <div class="plan">
+              <svg viewBox="0 0 260 140" aria-hidden="true">
+                <rect x="1" y="1" width="258" height="138" rx="4" fill="#fff" stroke="#111" stroke-width="2"/>
+                <rect x="4" y="4" width="36" height="132" fill="#eef0f3"/>
+                <line x1="40" y1="4" x2="40" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="42" y="4" width="68" height="132" fill="#f9d9d6"/>
+                <line x1="110" y1="4" x2="110" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="112" y="4" width="78" height="132" fill="#f6e7c9"/>
+                <line x1="190" y1="4" x2="190" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="192" y="4" width="64" height="132" fill="#e9e2d6"/>
+                <circle cx="224" cy="70" r="22" fill="#bfe3fb" stroke="#111" stroke-width="2"/>
+                <rect x="52" y="30" width="48" height="16" rx="3" fill="none" stroke="#111" stroke-width="1.5"/>
+                <text x="76" y="80" font-size="8" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">RECOVERY</text>
+                <text x="151" y="74" font-size="9" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">SAUNA</text>
+                <text x="224" y="120" font-size="8" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">KÁĎ</text>
+              </svg>
+            </div>
+            <span class="badge badge-blue">Nejčastější volba</span>
+            <h3>Celsia Studio</h3>
+            <div class="dim">3,5 × 6,5 m · longevity sestava</div>
+            <div class="price">2 690 000 Kč</div>
+          </a>
+          <a href="#konfigurator" class="pcard" data-goto-model="grand">
+            <div class="plan">
+              <svg viewBox="0 0 360 140" aria-hidden="true">
+                <rect x="1" y="1" width="358" height="138" rx="4" fill="#fff" stroke="#111" stroke-width="2"/>
+                <rect x="4" y="4" width="32" height="132" fill="#eef0f3"/>
+                <line x1="36" y1="4" x2="36" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="38" y="4" width="62" height="132" fill="#f9d9d6"/>
+                <line x1="100" y1="4" x2="100" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="102" y="4" width="74" height="132" fill="#f6e7c9"/>
+                <line x1="176" y1="4" x2="176" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="178" y="4" width="58" height="132" fill="#e9e2d6"/>
+                <circle cx="207" cy="70" r="20" fill="#bfe3fb" stroke="#111" stroke-width="2"/>
+                <line x1="236" y1="4" x2="236" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="238" y="4" width="48" height="132" fill="#e4eef3"/>
+                <line x1="286" y1="4" x2="286" y2="136" stroke="#111" stroke-width="2"/>
+                <rect x="288" y="4" width="68" height="132" fill="#e9e2d6"/>
+                <rect x="298" y="30" width="48" height="80" rx="10" fill="#9fd4f7" stroke="#111" stroke-width="2"/>
+                <text x="69" y="80" font-size="7" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">RECOVERY</text>
+                <text x="139" y="74" font-size="9" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">SAUNA</text>
+                <text x="207" y="118" font-size="8" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">KÁĎ</text>
+                <text x="262" y="74" font-size="7" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">PÁRA</text>
+                <text x="322" y="124" font-size="7" font-family="Manrope" font-weight="700" text-anchor="middle" fill="#111">VÍŘIVKA</text>
+              </svg>
+            </div>
+            <span class="badge">Volný slot 2026</span>
+            <h3>Celsia Grand</h3>
+            <div class="dim">3,5 × 9,0 m · privátní wellness dům</div>
+            <div class="price">3 990 000 Kč</div>
+          </a>
+        </div>
+        <div class="scroll-ctrl">
+          <button class="circ" data-scroll-prev="models" aria-label="Předchozí">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg>
+          </button>
+          <button class="circ" data-scroll-next="models" aria-label="Další">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="center-btn"><a href="#konfigurator" class="btn btn-outline">Sestavit vlastní modul</a></div>
+  </div>
+</section>
+
+<!-- BENTO -->
+<section class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-title"><h2>Často vás zajímá</h2></div>
+    <div class="bento">
+      <a href="#modely" class="tile big">
+        <img src="img/hero-kontrast.jpg" alt="">
+        <div class="tile-in"><span class="circ">01</span><span class="t">Jak vybrat modul</span><span class="arr">→</span></div>
       </a>
-      <nav style="display:flex;align-items:center;gap:26px;font-size:14.5px">
-        <a href="#koncept" data-m="nav" style="color:#54696b" data-hover="color:#0d2125">Koncept</a>
-        <a href="#modely" data-m="nav" style="color:#54696b" data-hover="color:#0d2125">Modely</a>
-        <a href="#pronajem" data-m="nav" style="color:#54696b" data-hover="color:#0d2125">Pro pronájem</a>
-        <a href="#garance" data-m="nav" style="color:#54696b" data-hover="color:#0d2125">Garance</a>
-        <a href="#technika" data-m="nav" style="color:#54696b" data-hover="color:#0d2125">Technika</a>
-        <span style="font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.08em;white-space:nowrap;flex-shrink:0"><span style="color:#0d2125;font-weight:600">CZ</span><span style="color:#54696b"> / </span><a href="en.html" style="color:#54696b" data-hover="color:#f0561d">EN</a></span>
-        <a href="#konfigurator" data-m="cta" style="white-space:nowrap;background:#f0561d;color:#fff;padding:11px 20px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase" data-hover="background:#ff6a30;color:#fff">Sestavit modul</a>
-      </nav>
+      <a href="#technika" class="tile grad">
+        <div class="tile-in"><span class="circ">⚡</span><span class="t">Modul a energie</span><span class="arr">→</span></div>
+      </a>
+      <a href="#faq" class="tile">
+        <img src="img/grand-terrace.jpg" alt="" style="object-position:70% 60%">
+        <div class="tile-in"><span class="circ">?</span><span class="t">Nejčastější otázky</span><span class="arr">→</span></div>
+      </a>
+      <a href="#duvody" class="tile">
+        <img src="img/hero-kontrast.jpg" alt="" style="object-position:80% 50%">
+        <div class="tile-in"><span class="circ">°</span><span class="t">Proč Celsia</span><span class="arr">→</span></div>
+      </a>
+      <a href="#pronajem" class="tile grad2">
+        <div class="tile-in"><span class="circ">%</span><span class="t">Modul, který si na sebe vydělá</span><span class="arr">→</span></div>
+      </a>
     </div>
-  </header>
+  </div>
+</section>
 
-  <section id="top" data-screen-label="Hero" style="padding-top:clamp(48px,7vh,84px)">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(13,33,37,.14);border-bottom:1px solid rgba(13,33,37,.14);padding:12px 0;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>Prefabrikované wellness moduly</span>
-        <span>Vyrobeno v Česku</span>
-        <span style="color:#f0561d">Series 001 · Ročník 2026</span>
+<!-- INSTALL -->
+<section id="proces" class="sec">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>Jak vypadá usazení modulu</h2>
+      <p>Modul vzniká kompletně v hale. Na pozemek přijede hotový, usadí se jeřábem na zemní vruty a tentýž den se zapojí.</p>
+    </div>
+    <div class="bigimg">
+      <img src="img/grand-terrace.jpg" alt="Usazený modul Celsia Grand na zahradě">
+      <div class="chip"><i></i> Ráno jeřáb · večer první zátop</div>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Konfigurace</h3><p>Sestavíte modul, projdeme spolu pozemek, přípojky a přístup pro jeřáb. Záloha 30 % rezervuje výrobní slot.</p></div>
+      <div class="step"><div class="n">02</div><h3>Výroba</h3><p>10 až 14 týdnů v hale. Modul vzniká pod střechou, včetně rozvodů a interiéru.</p></div>
+      <div class="step"><div class="n">03</div><h3>Usazení</h3><p>Přeprava na podvalníku, usazení jeřábem na zemní vruty, připojení. Jeden den na pozemku.</p></div>
+      <div class="step"><div class="n">04</div><h3>První protokol</h3><p>Zaškolení, nastavení aplikace a první společný kontrast. Od té chvíle jedete sami.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7 REASONS -->
+<section id="duvody" class="sec" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-title"><h2>7 důvodů proč Celsia</h2></div>
+    <div class="reasons" data-scroll="reasons">
+      <div class="reason"><div class="pic"><img src="img/hero-kontrast.jpg" alt=""><div class="num">1</div></div><h3>1 den na pozemku</h3><p>Ráno jeřáb, večer první zátop. Žádné staveniště, zahrada zůstane celá.</p></div>
+      <div class="reason"><div class="pic"><div class="num">2</div></div><h3>Pevná cena</h3><p>Cena z konfigurátoru je cena na faktuře. Žádné vícepráce, žádné příplatky.</p></div>
+      <div class="reason"><div class="pic"><img src="img/grand-terrace.jpg" alt="" style="object-position:60% 50%"><div class="num">3</div></div><h3>30 dní na vrácení</h3><p>Když vám modul do 30 dnů od usazení nesedne, odvezeme ho a vrátíme kupní cenu.</p></div>
+      <div class="reason"><div class="pic"><div class="num">4</div></div><h3>Vyrobeno v Česku</h3><p>Ocelový rám, zateplené panely, kompletní výroba pod střechou v české hale.</p></div>
+      <div class="reason"><div class="pic"><img src="img/hero-kontrast.jpg" alt="" style="object-position:20% 50%"><div class="num">5</div></div><h3>Celsia app</h3><p>Předehřev na dálku, řízení teplot, protokoly krok za krokem a historie sessions.</p></div>
+      <div class="reason"><div class="pic"><div class="num">6</div></div><h3>Záruka 5 let</h3><p>Na konstrukci 5 let, na technologie 2 roky. Servis první rok v ceně.</p></div>
+      <div class="reason"><div class="pic"><img src="img/grand-terrace.jpg" alt="" style="object-position:30% 50%"><div class="num">7</div></div><h3>10 kusů ročně</h3><p>Každý modul staví jedna parta. Číslovaná plaketa a prioritní servisní linka.</p></div>
+    </div>
+    <div class="scroll-ctrl">
+      <button class="circ" data-scroll-prev="reasons" aria-label="Předchozí"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="circ" data-scroll-next="reasons" aria-label="Další"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+</section>
+
+<!-- CONCEPT -->
+<section id="koncept" class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="concept">
+      <div>
+        <div class="eyebrow">Celsia</div>
+        <h2>Dvě teploty.<br>Jeden protokol.</h2>
+        <p class="lead">Kontrastní terapie je střídání žáru a chladu v přesných intervalech. Finské studie ji dlouhodobě spojují s lepší regenerací, spánkem a kardiovaskulární kondicí. Celsia ji dává do jednoho objektu a vede vás protokolem krok za krokem. Žádné hlídání času, žádné sypání ledu.</p>
+        <p class="lead">Podívejte se na <a href="#modely">modely</a>, spočítejte si <a href="#pronajem">návratnost pro pronájem</a> nebo si rovnou <a href="#konfigurator">sestavte modul</a>. Cena je konečná, do 24 hodin se ozveme s nejbližším volným slotem.</p>
+        <div class="statrows">
+          <div class="statrow"><span class="k">Sauna</span><span class="v">90 °C</span><span class="d">thermo osika, panoramatické sklo, kamna 6 až 9 kW</span></div>
+          <div class="statrow"><span class="k">Ledová káď</span><span class="v">3 až 5 °C</span><span class="d">nerez, chiller, filtrace a UV, nonstop bez ledu</span></div>
+          <div class="statrow"><span class="k">Recovery</span><span class="v">660 nm</span><span class="d">red light panel, infra lehátko, aroma a zvuk</span></div>
+        </div>
       </div>
-      <h1 style="margin:clamp(36px,6vh,64px) 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(42px,8.2vw,124px);line-height:.98;letter-spacing:-.015em">Hotové wellness za jeden den.<br><em style="color:#f0561d;font-weight:400">Žádná stavba.</em></h1>
-      <div data-m="stack" style="display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(28px,5vw,80px);align-items:end;margin-top:clamp(32px,5vh,56px)">
+      <div class="kpis">
+        <div class="kpi"><div class="v">1 den</div><div class="l">Montáž na pozemku</div></div>
+        <div class="kpi"><div class="v">od 949 000 Kč</div><div class="l">Vč. DPH a usazení</div></div>
+        <div class="kpi"><div class="v">10 kusů</div><div class="l">Ročně, víc nevyrobíme</div></div>
+        <div class="kpi"><div class="v">30 dní</div><div class="l">Na vrácení</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ZONES -->
+<section class="sec" style="padding-top:20px">
+  <div class="wrap">
+    <div class="sec-title"><h2>Co je uvnitř</h2></div>
+    <div class="reels">
+      <div class="reel">
+        <img src="img/hero-kontrast.jpg" alt="" style="object-position:25% 50%">
+        <span class="tag">Žár</span>
+        <div><div class="big">90<small>°C</small></div><h3>Finská sauna</h3><p>Pro čtyři osoby. Předehřejete na dálku z aplikace, doma vás čeká nahřáto.</p></div>
+      </div>
+      <div class="reel">
+        <img src="img/hero-kontrast.jpg" alt="" style="object-position:75% 50%">
+        <span class="tag">Led</span>
+        <div><div class="big">3<small>°C</small></div><h3>Ledová káď</h3><p>Chlazení, filtrace a UV lampa. Jdete kolem, ponoříte se, jdete dál.</p></div>
+      </div>
+      <div class="reel">
+        <img src="img/grand-terrace.jpg" alt="" style="object-position:80% 55%">
+        <span class="tag">Světlo</span>
+        <div><div class="big">660<small>nm</small></div><h3>Recovery lounge</h3><p>Red light panel a infra lehátko. Deset minut po kontrastu, se zvukem a aromou.</p></div>
+      </div>
+      <div class="reel app">
+        <span class="tag">Celsia app</span>
         <div>
-          <p style="margin:0;font-size:18.5px;line-height:1.65;color:#3c5254;max-width:54ch;text-wrap:pretty">Finská sauna, ledová káď a recovery v jednom objektu na ocelovém rámu. Vyrobíme v hale, přivezeme, ráno usadíme jeřábem. Večer poprvé topíte. A pokud vám do 30 dnů nesedne, vezmeme si ho zpátky a vrátíme peníze.</p>
-          <div style="display:flex;gap:12px;margin-top:34px;flex-wrap:wrap">
-            <a href="#konfigurator" style="background:#f0561d;color:#fff;padding:16px 28px;font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500" data-hover="background:#ff6a30;color:#fff">Sestavit modul →</a>
-            <a href="#pronajem" style="border:1px solid rgba(13,33,37,.3);color:#0d2125;padding:16px 28px;font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase" data-hover="border-color:#0d2125;color:#0d2125">Mám chatu / Airbnb</a>
+          <h3>Večerní kontrast</h3>
+          <div class="proto">
+            <div><span>Sauna 90°</span><b>12 min</b></div>
+            <div><span>Káď 3°</span><b>2 min</b></div>
+            <div><span>Pauza</span><b>5 min</b></div>
+            <div><span>Opakovat</span><b>3 kola</b></div>
           </div>
-        </div>
-        <div data-m="hide" aria-hidden="true" style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;padding-bottom:4px">
-          <span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;color:#4f93a8">KÁĎ</span>
-          <span style="font-family:'Instrument Serif',serif;font-size:clamp(40px,4.5vw,64px);line-height:1;color:#4f93a8">3°</span>
-          <span style="width:1px;height:56px;background:linear-gradient(180deg,#4f93a8,#f0561d)"></span>
-          <span style="font-family:'Instrument Serif',serif;font-size:clamp(40px,4.5vw,64px);line-height:1;color:#f0561d">90°</span>
-          <span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;color:#f0561d">SAUNA</span>
+          <p>Protokoly sestavené podle vědy, ne podle pocitu.</p>
         </div>
       </div>
     </div>
-    <figure style="margin:clamp(40px,7vh,72px) 0 0;position:relative">
-      <img src="img/hero-kontrast.jpg" alt="Modul Celsia v zahradě za soumraku, prosklená sauna a otužovací káď na kryté palubě" style="display:block;width:100%;height:clamp(380px,74vh,720px);object-fit:cover">
-      <span style="position:absolute;top:22px;left:clamp(20px,4vw,56px);background:#f0561d;color:#fff;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;padding:8px 12px">SAUNA · 90°</span>
-      <span style="position:absolute;bottom:22px;right:clamp(20px,4vw,56px);background:#4f93a8;color:#fff;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;padding:8px 12px">KÁĎ · 3°</span>
-    </figure>
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div data-m="stack2 stats" style="display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid rgba(13,33,37,.14)">
-        <div style="padding:24px 24px 24px 0"><b style="display:block;font-family:'Instrument Serif',serif;font-weight:400;font-size:27px">1 den</b><span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.08em;color:#54696b">MONTÁŽ NA POZEMKU</span></div>
-        <div style="padding:24px;border-left:1px solid rgba(13,33,37,.14)"><b style="display:block;font-family:'Instrument Serif',serif;font-weight:400;font-size:27px">od 949 000 Kč</b><span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.08em;color:#54696b">VČ. DPH A USAZENÍ</span></div>
-        <div style="padding:24px;border-left:1px solid rgba(13,33,37,.14)"><b style="display:block;font-family:'Instrument Serif',serif;font-weight:400;font-size:27px">10 kusů ročně</b><span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.08em;color:#54696b">VÍC JICH NEVYROBÍME</span></div>
-        <div style="padding:24px;border-left:1px solid rgba(13,33,37,.14)"><b style="display:block;font-family:'Instrument Serif',serif;font-weight:400;font-size:27px">30 dní</b><span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.08em;color:#54696b">NA VRÁCENÍ</span></div>
-      </div>
-    </div>
-  </section>
+  </div>
+</section>
 
-  <section id="koncept" data-screen-label="Koncept" style="padding:clamp(80px,12vh,150px) 0 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.14);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°01 — Koncept</span><span><span style="color:#4f93a8">3°</span> ↔ <span style="color:#f0561d">90°</span></span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02;letter-spacing:-.01em;max-width:16ch">Dvě teploty. <em style="color:#4f93a8">Jeden protokol.</em></h2>
-      <p style="margin:26px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:60ch;text-wrap:pretty">Kontrastní terapie je střídání žáru a chladu v přesných intervalech. Finské studie ji dlouhodobě spojují s lepší regenerací, spánkem a kardiovaskulární kondicí. Celsia ji dává do jednoho objektu a vede vás protokolem krok za krokem. Žádné hlídání času, žádné sypání ledu.</p>
-      <div data-m="stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px);margin-top:clamp(44px,7vh,72px)">
-        <article style="border-top:2px solid #f0561d;padding-top:22px">
-          <span style="font-family:'Instrument Serif',serif;font-size:clamp(48px,5vw,76px);line-height:1;color:#f0561d">90°</span>
-          <h3 style="margin:18px 0 10px;font-size:20px;font-weight:600;letter-spacing:.01em">Žár</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.62;color:#3c5254">Finská sauna pro čtyři osoby. Thermo osika, panoramatické sklo, kamna 6 až 9 kW. Předehřejete na dálku z aplikace, doma vás čeká nahřáto.</p>
-        </article>
-        <article style="border-top:2px solid #4f93a8;padding-top:22px">
-          <span style="font-family:'Instrument Serif',serif;font-size:clamp(48px,5vw,76px);line-height:1;color:#4f93a8">3°</span>
-          <h3 style="margin:18px 0 10px;font-size:20px;font-weight:600;letter-spacing:.01em">Led</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.62;color:#3c5254">Otužovací káď s chlazením, filtrací a UV lampou. Drží 3 až 5 °C nonstop. Jdete kolem, ponoříte se, jdete dál.</p>
-        </article>
-        <article style="border-top:2px solid #0d2125;padding-top:22px">
-          <span style="font-family:'Instrument Serif',serif;font-size:clamp(48px,5vw,76px);line-height:1">660<span style="font-size:.45em"> nm</span></span>
-          <h3 style="margin:18px 0 10px;font-size:20px;font-weight:600;letter-spacing:.01em">Světlo</h3>
-          <p style="margin:0;font-size:15.5px;line-height:1.62;color:#3c5254">Recovery lounge s velkoplošným red light panelem a infra lehátkem. Deset minut po kontrastu, se zvukem a aromou.</p>
-        </article>
-      </div>
-      <div role="img" aria-label="Ukázka kontrastního protokolu v aplikaci Celsia" style="margin-top:clamp(44px,7vh,72px);max-width:520px;border:1px solid rgba(13,33,37,.18);background:#f4f7f6;padding:26px 28px">
-        <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(13,33,37,.12);padding-bottom:14px;margin-bottom:6px">
-          <span style="font-family:'Instrument Serif',serif;font-size:21px">Večerní kontrast</span>
-          <span style="font-family:'Martian Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#54696b">CELSIA APP</span>
+<!-- COMPARISON -->
+<section id="srovnani" class="sec sec-gray">
+  <div class="wrap">
+    <div class="compare">
+      <div class="pic"><img src="img/hero-kontrast.jpg" alt="Modul Celsia Kontrast"></div>
+      <div>
+        <div class="eyebrow">Výrobek, ne stavba</div>
+        <h2>Přístavba trvá rok.<br>Tohle den.</h2>
+        <p class="muted" style="margin-top:14px">Zděné wellness znamená projekt, povolení, staveniště a rozpočet, který nikdo nedodrží. Modul je hotový výrobek. Cena je pevná, termín je pevný a zahrada zůstane celá.</p>
+        <div class="ctable">
+          <div class="row head"><span></span><span>Zděná přístavba</span><span>Celsia</span></div>
+          <div class="row"><span class="k">Čas</span><span class="a">6 až 12 měsíců stavby</span><span class="b">1 den na pozemku</span></div>
+          <div class="row"><span class="k">Povolení</span><span class="a">stavební řízení</span><span class="b">zpravidla bez povolení, výrobek na vrutech</span></div>
+          <div class="row"><span class="k">Cena</span><span class="a">roste během stavby</span><span class="b">pevná ve smlouvě, včetně dopravy</span></div>
+          <div class="row"><span class="k">Zahrada</span><span class="a">měsíce staveniště</span><span class="b">večer uklizeno</span></div>
+          <div class="row"><span class="k">Stěhování</span><span class="a">zůstává v domě</span><span class="b">modul zvednete a vezmete s sebou</span></div>
         </div>
-        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(13,33,37,.08);font-family:'Martian Mono',monospace;font-size:13.5px"><span style="color:#f0561d">Sauna 90°</span><span>12 min</span></div>
-        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(13,33,37,.08);font-family:'Martian Mono',monospace;font-size:13.5px"><span style="color:#4f93a8">Káď 3°</span><span>2 min</span></div>
-        <div style="display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid rgba(13,33,37,.08);font-family:'Martian Mono',monospace;font-size:13.5px"><span>Pauza</span><span>5 min</span></div>
-        <div style="display:flex;justify-content:space-between;padding:11px 0;font-family:'Martian Mono',monospace;font-size:13.5px"><span style="color:#54696b">Opakovat</span><span>3 kola</span></div>
-        <p style="margin:10px 0 0;font-size:13px;color:#54696b;line-height:1.55">Řízení teplot, předehřev na dálku a historie sessions. Protokoly sestavené podle vědy, ne podle pocitu.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="srovnani" data-screen-label="Srovnání" style="margin-top:clamp(80px,12vh,150px);background:#edf4f4;color:#0d2125;padding:clamp(72px,11vh,130px) 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.2);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°02 — Proč modul</span><span>Výrobek, ne stavba</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02;letter-spacing:-.01em">Přístavba trvá rok. <em style="color:#f0561d">Tohle den.</em></h2>
-      <p style="margin:24px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:58ch;text-wrap:pretty">Zděné wellness znamená projekt, povolení, staveniště a rozpočet, který nikdo nedodrží. Modul je hotový výrobek. Cena je pevná, termín je pevný a zahrada zůstane celá.</p>
-      <div style="margin-top:clamp(40px,6vh,60px);border-top:2px solid #0d2125">
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#54696b">
-          <div style="padding:16px 0"></div><div style="padding:16px 18px">Zděná přístavba</div><div style="padding:16px 18px;color:#0d2125;background:rgba(240,86,29,.07)">Celsia</div>
-        </div>
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-size:15.5px">
-          <div style="padding:16px 0;color:#54696b;font-size:14px">Čas</div><div style="padding:16px 18px;color:#6d8284">6 až 12 měsíců stavby</div><div style="padding:16px 18px;background:rgba(240,86,29,.07);font-weight:600">1 den na pozemku</div>
-        </div>
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-size:15.5px">
-          <div style="padding:16px 0;color:#54696b;font-size:14px">Povolení</div><div style="padding:16px 18px;color:#6d8284">stavební řízení</div><div style="padding:16px 18px;background:rgba(240,86,29,.07)">zpravidla bez povolení, výrobek na vrutech</div>
-        </div>
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-size:15.5px">
-          <div style="padding:16px 0;color:#54696b;font-size:14px">Cena</div><div style="padding:16px 18px;color:#6d8284">roste během stavby</div><div style="padding:16px 18px;background:rgba(240,86,29,.07)">pevná ve smlouvě, včetně dopravy</div>
-        </div>
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-size:15.5px">
-          <div style="padding:16px 0;color:#54696b;font-size:14px">Zahrada</div><div style="padding:16px 18px;color:#6d8284">měsíce staveniště</div><div style="padding:16px 18px;background:rgba(240,86,29,.07)">večer uklizeno</div>
-        </div>
-        <div data-m="trow" style="display:grid;grid-template-columns:.65fr 1fr 1fr;border-bottom:1px solid rgba(13,33,37,.15);font-size:15.5px">
-          <div style="padding:16px 0;color:#54696b;font-size:14px">Při stěhování</div><div style="padding:16px 18px;color:#6d8284">zůstává v domě</div><div style="padding:16px 18px;background:rgba(240,86,29,.07)">modul zvednete a vezmete s sebou</div>
-        </div>
-      </div>
-      <div style="margin-top:clamp(40px,6vh,60px);max-width:720px">
-        <h3 style="margin:0 0 12px;font-family:'Instrument Serif',serif;font-weight:400;font-size:29px">A co sauna za 300 tisíc?</h3>
-        <p style="margin:0;font-size:16px;line-height:1.65;color:#3c5254;text-wrap:pretty">Dobrá koupě, ale jiný produkt. Je to kabina. Bez ledové kádě, bez chlazení, bez sprchy, bez krytého závětří, bez dopravy s usazením a bez celku, který drží kontrastní protokol pohromadě. Prémiové evropské saunové moduly srovnatelného rozsahu, finské a estonské, se prodávají mezi 1,3 a 2,6 milionu korun a káď k nim stejně dokupujete zvlášť. Celsia má obojí v jednom tělese a na zahradě stojí za den.</p>
-      </div>
-      <div data-screen-label="Zóny" id="zony" style="margin-top:clamp(72px,11vh,120px)">
-        <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.2);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-          <span>N°03 — Zóny</span><span>Stavebnice</span>
-        </div>
-        <h2 style="margin:26px 0 clamp(32px,5vh,48px);font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4.6vw,64px);line-height:1.04">Stavebnice, ze které si vyberete.</h2>
-        <div style="border-top:1px solid rgba(13,33,37,.2)">
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">01</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Finská sauna</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Pro 4 osoby, thermo osika, panoramatické sklo. Elektrická kamna ve standardu, na dřevo jako opce.</p>
-          </div>
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">02</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Ledová káď</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Nerez, krytá paluba. S chillerem připravená 24/7 na 3 až 5 °C.</p>
-          </div>
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">03</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Recovery lounge</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Red light panel, infra lehátko, aroma a zvuk. Klidová část mezi koly.</p>
-          </div>
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">04</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Vířivka</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Zapuštěná do paluby, pro 5 osob. Na vlastní zemní patce, přípojka 400 V.</p>
-          </div>
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">05</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Parní kabina</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Volitelná zóna pro modely Studio a Grand.</p>
-          </div>
-          <div data-m="zona" style="display:grid;grid-template-columns:auto 220px 1fr;gap:clamp(16px,3vw,44px);align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(13,33,37,.15)">
-            <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">06</span>
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:24px">Střešní terasa</h3>
-            <p style="margin:0;font-size:15px;color:#3c5254">Pochozí střecha se zábradlím, lehátky a bočními schody. Součást modelu Grand.</p>
-          </div>
+        <div class="note">
+          <h3>A co sauna za 300 tisíc?</h3>
+          <p>Dobrá koupě, ale jiný produkt. Je to kabina. Bez ledové kádě, bez chlazení, bez sprchy, bez krytého závětří, bez dopravy s usazením a bez celku, který drží kontrastní protokol pohromadě. Prémiové evropské saunové moduly srovnatelného rozsahu se prodávají mezi 1,3 a 2,6 milionu korun a káď k nim stejně dokupujete zvlášť.</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="modely" data-screen-label="Modely" style="padding:clamp(80px,12vh,150px) 0 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.14);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°04 — Modely</span><span>4 sestavy · 1 konstrukce</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02">Čtyři sestavy. <em style="color:#f0561d">Jedna konstrukce.</em></h2>
-      <p style="margin:24px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:58ch">Každý modul je jeden vyrobený kus na ocelovém rámu. Na pozemek přijede hotový, usadí se jeřábem na zemní vruty a tentýž den se zapojí.</p>
-
-      <article data-m="stack" style="display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(28px,5vw,80px);padding:clamp(44px,7vh,64px) 0;border-top:1px solid rgba(13,33,37,.14);margin-top:clamp(44px,7vh,64px)">
-        <div style="border:1px solid rgba(13,33,37,.14);background:#f4f7f6;padding:22px;max-width:340px;box-sizing:border-box">
-          <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.1em;color:#54696b;margin-bottom:14px">PŮDORYS · 2,5 × 4,0 M</span>
-          <svg viewBox="0 0 270 470" fill="none" stroke="#54696b" stroke-width="1.2" aria-label="Půdorys modelu Host">
-            <rect x="10" y="10" width="250" height="400" stroke="#0d2125"></rect>
-            <line x1="10" y1="230" x2="260" y2="230"></line>
-            <rect x="14" y="14" width="242" height="212" fill="#f0561d" fill-opacity=".08" stroke="none"></rect>
-            <circle cx="135" cy="330" r="46" stroke="#4f93a8" stroke-width="1.5"></circle>
-            <g font-family="Martian Mono,monospace" font-size="12" fill="#54696b" stroke="none">
-              <text x="24" y="45" fill="#0d2125">Sauna 90°</text><text x="24" y="63">4 osoby</text>
-              <text x="24" y="258">Otevřená paluba</text><text x="101" y="334" fill="#4f93a8">Káď 3°</text>
-              <text x="24" y="398">venkovní sprcha</text>
-            </g>
-            <g font-family="Martian Mono,monospace" font-size="10" fill="#54696b" stroke="none"><text x="115" y="460">2,5 m</text><text x="244" y="215" transform="rotate(90 244 215)" text-anchor="middle">4,0 m</text></g>
-          </svg>
-        </div>
-        <div style="display:flex;flex-direction:column">
-          <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,3.4vw,44px)">Celsia Host</h3>
-            <span style="font-family:'Martian Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#4f93a8;border:1px solid rgba(79,147,168,.55);padding:5px 10px">PRO PRONÁJMY</span>
-          </div>
-          <p style="margin:10px 0 16px;font-family:'Martian Mono',monospace;font-size:12px;color:#54696b">2,5 × 4,0 M · CCA 3,5 T · STAVĚNÝ NA KOMERČNÍ PROVOZ</p>
-          <p style="margin:0;font-size:16px;line-height:1.62;color:#3c5254;max-width:60ch">Sauna a káď na otevřené palubě, bez okras a se vším, co provoz pro hosty potřebuje. V aplikaci host mode, teploty a časy řídíte na dálku vy, ne hosté.</p>
-          <div data-m="stack" style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:22px 0 26px;max-width:640px">
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Finská sauna pro 4 osoby</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Ledová káď, nerez</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Venkovní sprcha</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Otevřená paluba</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Elektrická kamna 6 kW</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Host mode v aplikaci</span>
-          </div>
-          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:auto">
-            <div><span style="font-family:'Instrument Serif',serif;font-size:clamp(26px,2.6vw,34px)">949 000 Kč</span><span style="display:block;font-size:12.5px;color:#54696b;margin-top:4px">vč. DPH, dopravy a usazení do 150 km od Prahy</span></div>
-            <a href="#konfigurator" data-pick-model="host" style="border:1px solid rgba(13,33,37,.3);padding:13px 24px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0d2125;white-space:nowrap" data-hover="border-color:#f0561d;color:#f0561d">Sestavit Host</a>
-          </div>
-        </div>
-      </article>
-
-      <article data-m="stack" style="display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(28px,5vw,80px);padding:clamp(44px,7vh,64px) 0;border-top:1px solid rgba(13,33,37,.14)">
-        <div style="border:1px solid rgba(13,33,37,.14);background:#f4f7f6;padding:22px;max-width:340px;box-sizing:border-box">
-          <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.1em;color:#54696b;margin-bottom:14px">PŮDORYS · 3,0 × 4,0 M</span>
-          <svg viewBox="0 0 320 450" fill="none" stroke="#54696b" stroke-width="1.2" aria-label="Půdorys modelu Kontrast">
-            <rect x="10" y="10" width="300" height="400" stroke="#0d2125"></rect>
-            <line x1="10" y1="95" x2="310" y2="95"></line><line x1="10" y1="300" x2="310" y2="300"></line>
-            <rect x="14" y="99" width="292" height="197" fill="#f0561d" fill-opacity=".08" stroke="none"></rect>
-            <circle cx="160" cy="355" r="46" stroke="#4f93a8" stroke-width="1.5"></circle>
-            <g font-family="Martian Mono,monospace" font-size="12" fill="#54696b" stroke="none">
-              <text x="24" y="40">Převlékací zóna</text><text x="24" y="58">venkovní sprcha</text>
-              <text x="24" y="130" fill="#0d2125">Sauna 90°</text><text x="24" y="148">4 osoby</text>
-              <text x="126" y="359" fill="#4f93a8">Káď 3°</text><text x="24" y="325">Krytá paluba</text>
-            </g>
-            <g font-family="Martian Mono,monospace" font-size="10" fill="#54696b" stroke="none"><text x="140" y="440">3,0 m</text><text x="292" y="215" transform="rotate(90 292 215)" text-anchor="middle">4,0 m</text></g>
-          </svg>
-        </div>
-        <div style="display:flex;flex-direction:column">
-          <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,3.4vw,44px)">Celsia Kontrast</h3>
-          <p style="margin:10px 0 16px;font-family:'Martian Mono',monospace;font-size:12px;color:#54696b">3,0 × 4,0 M · CCA 4 T · ZÁKLAD METODY PRO DOMÁCÍ WELLNESS</p>
-          <p style="margin:0;font-size:16px;line-height:1.62;color:#3c5254;max-width:60ch">Sauna a ledová káď pod jednou střechou. Jedna pevná specifikace, žádné projektování. Nic navíc, nic nechybí.</p>
-          <div data-m="stack" style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:22px 0 26px;max-width:640px">
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Finská sauna pro 4 osoby</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Ledová káď, nerez</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Venkovní sprcha</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Převlékací zóna</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Elektrická kamna 6 kW</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Opláštění dle výběru</span>
-          </div>
-          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:auto">
-            <div><span style="font-family:'Instrument Serif',serif;font-size:clamp(26px,2.6vw,34px)">1 190 000 Kč</span><span style="display:block;font-size:12.5px;color:#54696b;margin-top:4px">vč. DPH, dopravy a usazení do 150 km od Prahy</span></div>
-            <a href="#konfigurator" data-pick-model="kontrast" style="border:1px solid rgba(13,33,37,.3);padding:13px 24px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0d2125;white-space:nowrap" data-hover="border-color:#f0561d;color:#f0561d">Sestavit Kontrast</a>
-          </div>
-        </div>
-      </article>
-
-      <article data-m="stack" style="display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(28px,5vw,80px);padding:clamp(44px,7vh,64px) 0;border-top:1px solid rgba(13,33,37,.14)">
-        <div style="border:1px solid rgba(13,33,37,.14);background:#f4f7f6;padding:22px;max-width:340px;box-sizing:border-box">
-          <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.1em;color:#54696b;margin-bottom:14px">PŮDORYS · 3,5 × 6,5 M</span>
-          <svg viewBox="0 0 320 620" fill="none" stroke="#54696b" stroke-width="1.2" aria-label="Půdorys modelu Studio">
-            <rect x="10" y="10" width="300" height="580" stroke="#0d2125"></rect>
-            <line x1="10" y1="110" x2="310" y2="110"></line><line x1="10" y1="280" x2="310" y2="280"></line><line x1="10" y1="465" x2="310" y2="465"></line>
-            <rect x="14" y="284" width="292" height="177" fill="#f0561d" fill-opacity=".08" stroke="none"></rect>
-            <circle cx="160" cy="527" r="46" stroke="#4f93a8" stroke-width="1.5"></circle>
-            <g font-family="Martian Mono,monospace" font-size="12" fill="#54696b" stroke="none">
-              <text x="24" y="45">Zádveří</text><text x="24" y="63">venkovní sprcha</text>
-              <text x="24" y="145" fill="#0d2125">Recovery lounge</text><text x="24" y="163">red light · infra</text>
-              <text x="24" y="315" fill="#0d2125">Sauna 90°</text>
-              <text x="126" y="531" fill="#4f93a8">Káď 3°</text>
-            </g>
-            <g font-family="Martian Mono,monospace" font-size="10" fill="#54696b" stroke="none"><text x="140" y="612">3,5 m</text><text x="292" y="300" transform="rotate(90 292 300)" text-anchor="middle">6,5 m</text></g>
-          </svg>
-        </div>
-        <div style="display:flex;flex-direction:column">
-          <div style="display:flex;align-items:baseline;gap:14px;flex-wrap:wrap">
-            <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,3.4vw,44px)">Celsia Studio</h3>
-            <span style="font-family:'Martian Mono',monospace;font-size:10.5px;letter-spacing:.12em;color:#f0561d;border:1px solid rgba(240,86,29,.6);padding:5px 10px">NEJČASTĚJŠÍ VOLBA</span>
-          </div>
-          <p style="margin:10px 0 16px;font-family:'Martian Mono',monospace;font-size:12px;color:#54696b">3,5 × 6,5 M · CCA 6 T · KOMPLETNÍ LONGEVITY SESTAVA</p>
-          <p style="margin:0;font-size:16px;line-height:1.62;color:#3c5254;max-width:60ch">Kontrast plus regenerace. Recovery lounge s červeným světlem a infra lehátkem, chlazení kádě nonstop a chytré ovládání ve standardu.</p>
-          <div data-m="stack" style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:22px 0 26px;max-width:640px">
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Vše z modelu Kontrast</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Recovery lounge</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Red light panel a infra lehátko</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Chiller 24/7 ve standardu</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Celsia app a smart ovládání</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Kamna 9 kW</span>
-          </div>
-          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:auto">
-            <div><span style="font-family:'Instrument Serif',serif;font-size:clamp(26px,2.6vw,34px)">2 690 000 Kč</span><span style="display:block;font-size:12.5px;color:#54696b;margin-top:4px">vč. DPH, dopravy a usazení do 150 km od Prahy</span></div>
-            <a href="#konfigurator" data-pick-model="studio" style="border:1px solid rgba(13,33,37,.3);padding:13px 24px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0d2125;white-space:nowrap" data-hover="border-color:#f0561d;color:#f0561d">Sestavit Studio</a>
-          </div>
-        </div>
-      </article>
+<!-- AUDIENCE -->
+<section class="sec">
+  <div class="wrap">
+    <div class="sec-title"><h2>Pro koho modul stavíme</h2></div>
+    <div class="aud">
+      <a href="#modely" class="acard">
+        <div class="pic"><img src="img/grand-terrace.jpg" alt=""></div>
+        <div class="in"><div><h3>Rodinný dům</h3><div class="s">Kontrast a Studio, wellness na zahradě bez stavby</div></div><span class="circ">→</span></div>
+      </a>
+      <a href="#pronajem" class="acard">
+        <div class="pic"><img src="img/hero-kontrast.jpg" alt=""></div>
+        <div class="in"><div><h3>Chata a Airbnb</h3><div class="s">Host, stavěný na provoz pro hosty a vyšší cenu za noc</div></div><span class="circ">→</span></div>
+      </a>
+      <a href="#konfigurator" class="acard">
+        <div class="pic"><img src="img/grand-terrace.jpg" alt="" style="object-position:40% 40%"></div>
+        <div class="in"><div><h3>Penzion a developer</h3><div class="s">Grand, privátní wellness dům pro projekt nebo resort</div></div><span class="circ">→</span></div>
+      </a>
     </div>
-    <figure style="margin:0;position:relative">
-      <img src="img/grand-terrace.jpg" alt="Modul Celsia Grand s vířivkou na terase, saunou, recovery loungí a pochozí střešní terasou" style="display:block;width:100%;height:clamp(340px,62vh,620px);object-fit:cover">
-      <span style="position:absolute;bottom:22px;left:clamp(20px,4vw,56px);background:#0d2125;color:#fff;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;padding:8px 12px">VIZUALIZACE · MODEL GRAND · VÍŘIVKA 37° · STŘEŠNÍ TERASA</span>
-    </figure>
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <article data-m="stack" style="display:grid;grid-template-columns:minmax(240px,340px) 1fr;gap:clamp(28px,5vw,80px);padding:clamp(44px,7vh,64px) 0;border-bottom:1px solid rgba(13,33,37,.14)">
-        <div style="border:1px solid rgba(13,33,37,.14);background:#f4f7f6;padding:22px;max-width:340px;box-sizing:border-box">
-          <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.1em;color:#54696b;margin-bottom:14px">PŮDORYS · 3,5 × 9,0 M</span>
-          <svg viewBox="0 0 320 760" fill="none" stroke="#54696b" stroke-width="1.2" aria-label="Půdorys modelu Grand">
-            <rect x="10" y="10" width="300" height="730" stroke="#0d2125"></rect>
-            <line x1="10" y1="95" x2="310" y2="95"></line><line x1="10" y1="250" x2="310" y2="250"></line><line x1="10" y1="425" x2="310" y2="425"></line><line x1="10" y1="545" x2="310" y2="545"></line>
-            <rect x="14" y="254" width="292" height="167" fill="#f0561d" fill-opacity=".08" stroke="none"></rect>
-            <circle cx="105" cy="485" r="40" stroke="#4f93a8" stroke-width="1.5"></circle>
-            <circle cx="160" cy="642" r="62" stroke="#0d2125" stroke-width="1.5"></circle>
-            <g font-family="Martian Mono,monospace" font-size="12" fill="#54696b" stroke="none">
-              <text x="24" y="40">Zádveří · sprcha</text>
-              <text x="24" y="130" fill="#0d2125">Recovery lounge</text><text x="24" y="148">red light · infra</text>
-              <text x="24" y="285" fill="#0d2125">Sauna 90°</text>
-              <text x="76" y="489" fill="#4f93a8">Káď 3°</text>
-              <text x="200" y="470">Parní kabina</text><text x="200" y="486">(opce)</text>
-              <text x="118" y="646" fill="#0d2125">Vířivka 37°</text><text x="120" y="664">5 osob</text>
-            </g>
-            <g font-family="Martian Mono,monospace" font-size="10" fill="#54696b" stroke="none"><text x="140" y="752">3,5 m</text><text x="292" y="370" transform="rotate(90 292 370)" text-anchor="middle">9,0 m</text><text x="24" y="726">+ pochozí střešní terasa</text></g>
-          </svg>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="wrap">
+  <div class="story">
+    <img src="img/grand-terrace.jpg" alt="">
+    <div class="box">
+      <div class="eyebrow">Series 001 · Ročník 2026</div>
+      <h2>Deset číslovaných kusů ročně</h2>
+      <p>Každý modul staví jedna parta, jeden kus po druhém. Víc než deset jich za rok poctivě nevyrobíme. Každý nese číslovanou plaketu, výrobní list s podpisy party a prioritní servisní linku. Až se ročník naplní, další kusy jdou do ročníku 2027.</p>
+      <a href="#konfigurator" class="btn btn-white btn-sm">Ověřit volný slot</a>
+    </div>
+  </div>
+</section>
+
+<!-- RENTAL / ROI -->
+<section id="pronajem" class="sec sec-gray" style="margin-top:56px">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>Modul, který si na sebe vydělá</h2>
+      <p>Wellness je dnes nejsilnější filtr při výběru ubytování. Podle dat AirDNA zvedá sauna cenu za noc kolem 7 %, vířivka 15 až 35 % a obsazenost roste až o 10 %. Modul usadíme za den, takže nepřijdete o jediný rezervovaný víkend.</p>
+    </div>
+    <div class="roi">
+      <div class="roi-calc">
+        <h3>Počítejte s námi</h3>
+        <div class="slider">
+          <label>O kolik zvednete cenu za noc <output data-out="uplKc">1 200 Kč</output></label>
+          <input type="range" min="500" max="3000" step="100" value="1200" data-slider="upl">
         </div>
-        <div style="display:flex;flex-direction:column">
-          <h3 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,3.4vw,44px)">Celsia Grand</h3>
-          <p style="margin:10px 0 16px;font-family:'Martian Mono',monospace;font-size:12px;color:#54696b">3,5 × 9,0 M · CCA 8 T · PRIVÁTNÍ WELLNESS DŮM</p>
-          <p style="margin:0;font-size:16px;line-height:1.62;color:#3c5254;max-width:60ch">Kompletní wellness pro rodinu i pronájem. K longevity sestavě přibývá zapuštěná vířivka pro pět osob a pochozí střešní terasa s lehátky.</p>
-          <div data-m="stack" style="display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin:22px 0 26px;max-width:640px">
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px">Vše z modelu Studio</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Zapuštěná vířivka pro 5 osob</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Pochozí střešní terasa</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Boční schodiště a zábradlí</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Příprava pro parní kabinu</span>
-            <span style="padding:8px 0;border-bottom:1px solid rgba(13,33,37,.1);font-size:15px;color:#0d2125"><span style="color:#f0561d">+ </span>Venkovní osvětlení palub</span>
-          </div>
-          <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:auto">
-            <div><span style="font-family:'Instrument Serif',serif;font-size:clamp(26px,2.6vw,34px)">3 990 000 Kč</span><span style="display:block;font-size:12.5px;color:#54696b;margin-top:4px">vč. DPH, dopravy a usazení do 150 km od Prahy</span></div>
-            <a href="#konfigurator" data-pick-model="grand" style="border:1px solid rgba(13,33,37,.3);padding:13px 24px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#0d2125;white-space:nowrap" data-hover="border-color:#f0561d;color:#f0561d">Sestavit Grand</a>
-          </div>
+        <div class="slider">
+          <label>Kolik nocí měsíčně prodáváte <output data-out="nightsVal">16</output></label>
+          <input type="range" min="6" max="28" step="1" value="16" data-slider="nights">
         </div>
-      </article>
-      <div style="padding:clamp(44px,7vh,72px) 0 0">
-        <h2 style="margin:0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(28px,4vw,54px);line-height:1.04">Cena, po které už <em style="color:#f0561d">nic nepřijde.</em></h2>
-        <p style="margin:20px 0 0;font-size:16.5px;line-height:1.65;color:#3c5254;max-width:58ch">Žádné vícepráce, žádný ceník příplatků na druhé straně smlouvy. Tohle všechno dostáváte v ceně modulu.</p>
-        <div data-m="stack2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(13,33,37,.12);border:1px solid rgba(13,33,37,.12);margin-top:36px">
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Doprava a jeřáb</b><span style="font-size:13.5px;color:#54696b">podvalník, autojeřáb, usazení na milimetr</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Zemní vruty</b><span style="font-size:13.5px;color:#54696b">založení bez betonu a bez výkopů</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Zapojení za 1 den</b><span style="font-size:13.5px;color:#54696b">elektro, voda, odpad, první zátop</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Celsia app</b><span style="font-size:13.5px;color:#54696b">protokoly, předehřev na dálku, historie</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Osobní onboarding</b><span style="font-size:13.5px;color:#54696b">první kontrast projdeme s vámi</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Servis první rok</b><span style="font-size:13.5px;color:#54696b">prohlídka kamen, chlazení a filtrace</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Startovací sada</b><span style="font-size:13.5px;color:#54696b">filtry, UV lampa, péče o vodu na sezónu</span></div>
-          <div style="background:#fff;padding:22px 20px"><b style="display:block;font-weight:600;font-size:15.5px;margin-bottom:5px">Záruka 5 let</b><span style="font-size:13.5px;color:#54696b">na konstrukci, 2 roky na technologie</span></div>
+        <div class="roi-out">
+          <div><div class="v" data-out="yearlyKc">230 400 Kč</div><div class="l">Ročně navíc</div></div>
+          <div><div class="v" data-out="paybackTxt">4,1 roku</div><div class="l">Návratnost Host</div></div>
+          <div><div class="v" data-out="coverTxt">12 nocí</div><div class="l">Pokryje splátku</div></div>
+        </div>
+        <p class="small muted" style="margin-top:14px">Orientační splátka od 13 500 Kč měsíčně u modelu Host přes leasingového partnera, 20 % akontace, 72 splátek. Nepočítáme vyšší obsazenost mimo sezónu ani růst hodnoty nemovitosti. Konkrétní nabídku financování připravíme k poptávce.</p>
+      </div>
+      <div class="roi-why">
+        <div class="why"><span class="circ">01</span><div><h3>Vyšší cena za noc</h3><p>Sauna s ledovou kádí posouvá objekt do jiné kategorie inzerátu. Neprodáváte nocleh, prodáváte víkendový rituál.</p></div></div>
+        <div class="why"><span class="circ">02</span><div><h3>Sezóna celý rok</h3><p>Kontrast je nejlepší v zimě a na podzim, přesně když je kalendář nejprázdnější.</p></div></div>
+        <div class="why"><span class="circ">03</span><div><h3>Žádná stavba u hostů</h3><p>Ráno jeřáb, večer hotovo. Provoz nezastavíte ani na víkend.</p></div></div>
+        <div class="why"><span class="circ">04</span><div><h3>Majetek, ne náklad</h3><p>Modul není přestavba cizí nemovitosti. Je váš, dá se přestěhovat i prodat.</p></div></div>
+        <a href="#konfigurator" class="btn btn-blue" data-goto-model="host" style="justify-self:start">Sestavit modul pro pronájem</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONFIGURATOR -->
+<section id="konfigurator" class="sec">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>Sestavte si svůj modul</h2>
+      <p>Cena se počítá průběžně a je konečná. Odesláním se k ničemu nezavazujete. Do 24 hodin se ozveme s nejbližším volným výrobním slotem a dalším postupem.</p>
+    </div>
+    <div class="conf">
+      <div>
+        <div class="cstep">
+          <div class="eyebrow">1 · Model</div>
+          <div class="opt" data-pick-model="host"><span class="ring"><i data-mark="model:host"></i></span><div><div class="t">Celsia Host <span class="tag">Pro pronájmy</span></div><div class="d">Sauna, káď na otevřené palubě, host mode · 2,5 × 4,0 m</div></div><span class="p">949 000 Kč</span></div>
+          <div class="opt" data-pick-model="kontrast"><span class="ring"><i data-mark="model:kontrast"></i></span><div><div class="t">Celsia Kontrast</div><div class="d">Sauna, ledová káď, venkovní sprcha · 3,0 × 4,0 m</div></div><span class="p">1 190 000 Kč</span></div>
+          <div class="opt" data-pick-model="studio"><span class="ring"><i data-mark="model:studio"></i></span><div><div class="t">Celsia Studio <span class="tag">Nejčastější volba</span></div><div class="d">Plus recovery lounge, chiller a smart ovládání · 3,5 × 6,5 m</div></div><span class="p">2 690 000 Kč</span></div>
+          <div class="opt" data-pick-model="grand"><span class="ring"><i data-mark="model:grand"></i></span><div><div class="t">Celsia Grand</div><div class="d">Plus vířivka pro 5 osob a střešní terasa · 3,5 × 9,0 m</div></div><span class="p">3 990 000 Kč</span></div>
+        </div>
+        <div class="cstep">
+          <div class="eyebrow">2 · Opláštění</div>
+          <div class="opt" data-pick-clad="thermo"><span class="ring"><i data-mark="clad:thermo"></i></span><div><div class="t">Thermowood</div><div class="d">Teplá severská borovice, přirozeně stárne do šeda</div></div><span class="p">v ceně</span></div>
+          <div class="opt" data-pick-clad="shou"><span class="ring"><i data-mark="clad:shou"></i></span><div><div class="t">Opálené dřevo</div><div class="d">Shou sugi ban, hluboká černá struktura, bezúdržbové</div></div><span class="p">+ 85 000 Kč</span></div>
+          <div class="opt" data-pick-clad="zrcadlo"><span class="ring"><i data-mark="clad:zrcadlo"></i></span><div><div class="t">Zrcadlové sklo</div><div class="d">Fasádní panely, modul zmizí v zahradě</div></div><span class="p">+ 140 000 Kč</span></div>
+        </div>
+        <div class="cstep">
+          <div class="eyebrow">3 · Opce</div>
+          <div class="opt" data-toggle-opt="chiller" data-row="chiller"><span class="ring"><i data-mark="opt:chiller"></i></span><div><div class="t">Chiller 24/7</div><div class="d">Káď drží 3 až 5 °C nonstop, bez ledu a bez čekání</div></div><span class="p" data-out="chillerPrice">+ 96 000 Kč</span></div>
+          <div class="opt" data-toggle-opt="parni" data-row="parni"><span class="ring"><i data-mark="opt:parni"></i></span><div><div class="t">Parní kabina</div><div class="d">Samostatná parní zóna, pouze Studio a Grand</div></div><span class="p">+ 240 000 Kč</span></div>
+          <div class="opt" data-toggle-opt="drevo"><span class="ring"><i data-mark="opt:drevo"></i></span><div><div class="t">Kamna na dřevo</div><div class="d">Místo elektrických, s komínem a přívodem vzduchu</div></div><span class="p">+ 38 000 Kč</span></div>
+        </div>
+      </div>
+      <div class="sheet">
+        <div class="eyebrow">Výrobní list · Series 001</div>
+        <h3>Váš modul</h3>
+        <div class="sumrows" data-sumrows></div>
+        <div class="total"><span class="l">Celkem</span><span class="v" data-out="total">2 690 000 Kč</span></div>
+        <p class="fine">Cena vč. DPH, dopravy a usazení jeřábem do 150 km od Prahy. Konečná, po podpisu se nemění. Záloha 30 %.</p>
+        <form action="https://formsubmit.co/hello@gallerypoint.cz" method="POST" class="form">
+          <input type="hidden" name="_subject" value="Poptávka CELSIA">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="Konfigurace" value="" data-out-value="conf">
+          <input type="text" name="Jméno" placeholder="Jméno a příjmení" required>
+          <input type="tel" name="Telefon" placeholder="Telefon" required>
+          <input type="email" name="Email" placeholder="E-mail" required>
+          <input type="text" name="Místo" placeholder="Obec, kde bude modul stát">
+          <textarea name="Zpráva" rows="3" placeholder="Poznámka, termín, dotaz"></textarea>
+          <button type="submit" class="btn btn-blue">Ověřit volný slot</button>
+          <p class="fine">Odesláním souhlasíte se zpracováním údajů pro vyřízení poptávky. Nic víc s nimi neděláme.</p>
+        </form>
+      </div>
+    </div>
+
+    <div class="sec-title" style="margin-top:64px;margin-bottom:0">
+      <h2>Cena, po které už nic nepřijde</h2>
+      <p>Žádné vícepráce, žádný ceník příplatků na druhé straně smlouvy. Tohle všechno dostáváte v ceně modulu.</p>
+    </div>
+    <div class="incl">
+      <div class="inc"><span class="circ">01</span><h3>Doprava a jeřáb</h3><p>podvalník, autojeřáb, usazení na milimetr</p></div>
+      <div class="inc"><span class="circ">02</span><h3>Zemní vruty</h3><p>založení bez betonu a bez výkopů</p></div>
+      <div class="inc"><span class="circ">03</span><h3>Zapojení za 1 den</h3><p>elektro, voda, odpad, první zátop</p></div>
+      <div class="inc"><span class="circ">04</span><h3>Celsia app</h3><p>protokoly, předehřev na dálku, historie</p></div>
+      <div class="inc"><span class="circ">05</span><h3>Osobní onboarding</h3><p>první kontrast projdeme s vámi</p></div>
+      <div class="inc"><span class="circ">06</span><h3>Servis první rok</h3><p>prohlídka kamen, chlazení a filtrace</p></div>
+      <div class="inc"><span class="circ">07</span><h3>Startovací sada</h3><p>filtry, UV lampa, péče o vodu na sezónu</p></div>
+      <div class="inc"><span class="circ">08</span><h3>Záruka 5 let</h3><p>na konstrukci, 2 roky na technologie</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section id="garance" class="sec sec-dark">
+  <div class="wrap">
+    <div class="sec-title">
+      <h2>Riziko neseme my</h2>
+      <p>Kupujete věc za víc než milion, kterou jste si nemohli nikde osahat. Tak to otočíme. Vyzkoušíte ji doma a rozhodnete se potom.</p>
+    </div>
+    <div class="gcards">
+      <div class="gcard">
+        <div class="pic"><div class="n">30<small>dní</small></div></div>
+        <div class="in">
+          <h3>30 dní doma</h3>
+          <div class="meta"><span class="dot">°</span> Garance 01</div>
+          <p>Saunujte, otužujte se, pozvěte návštěvu. Pokud vám modul do 30 dnů od usazení nesedne, odvezeme ho a vrátíme kupní cenu. Jediné, co jde za vámi, je zpáteční doprava.</p>
+        </div>
+      </div>
+      <div class="gcard">
+        <div class="pic"><div class="n">10<small>tis. Kč</small></div></div>
+        <div class="in">
+          <h3>Termín, nebo sleva</h3>
+          <div class="meta"><span class="dot">°</span> Garance 02</div>
+          <p>Ve smlouvě máte datum usazení. Za každý započatý týden našeho zpoždění jde z ceny 10 000 Kč dolů.</p>
+        </div>
+      </div>
+      <div class="gcard">
+        <div class="pic"><div class="n">0<small>příplatků</small></div></div>
+        <div class="in">
+          <h3>Pevná cena</h3>
+          <div class="meta"><span class="dot">°</span> Garance 03</div>
+          <p>Cena z konfigurátoru je cena na faktuře. Žádné vícepráce, žádné palivové příplatky, žádná překvapení.</p>
         </div>
       </div>
     </div>
-  </section>
+    <p class="center small muted" style="margin-top:22px">Přesné znění garancí je součástí smlouvy, kterou dostanete před podpisem.</p>
+    <div class="center-btn"><a href="#konfigurator" class="btn btn-outline-w">Ověřit volný slot</a></div>
+  </div>
+</section>
 
-  <section id="pronajem" data-screen-label="Pro pronájem" style="margin-top:clamp(80px,12vh,150px);background:#edf4f4;color:#0d2125;padding:clamp(72px,11vh,130px) 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.2);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°05 — Pro chaty a Airbnb</span><span>Návratnost</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02">Modul, který si <em style="color:#f0561d">na sebe vydělá.</em></h2>
-      <p style="margin:24px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:60ch;text-wrap:pretty">Wellness je dnes nejsilnější filtr při výběru ubytování. Podle dat AirDNA zvedá sauna cenu za noc kolem 7 %, vířivka 15 až 35 % a obsazenost roste až o 10 %. Modul usadíme za den, takže nepřijdete o jediný rezervovaný víkend. A hosté fotí zimní páru nad kádí za vás.</p>
-      <div data-m="stack" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,80px);align-items:start;margin-top:clamp(40px,6vh,60px)">
-        <div style="border:1px solid rgba(13,33,37,.25);background:#fff;padding:30px">
-          <p style="margin:0 0 22px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">Počítejte s námi</p>
-          <label style="display:flex;justify-content:space-between;font-size:14px;color:#3c5254;margin-bottom:10px">O kolik zvednete cenu za noc <output style="font-family:'Martian Mono',monospace;color:#0d2125;font-weight:500" data-out="uplKc"></output></label>
-          <input type="range" min="500" max="2000" step="50" value="1200" data-slider="upl" aria-label="Navýšení ceny za noc" style="width:100%">
-          <label style="display:flex;justify-content:space-between;font-size:14px;color:#3c5254;margin:22px 0 10px">Kolik nocí měsíčně prodáváte <output style="font-family:'Martian Mono',monospace;color:#0d2125;font-weight:500" data-out="nightsVal"></output></label>
-          <input type="range" min="8" max="26" step="1" value="16" data-slider="nights" aria-label="Počet prodaných nocí měsíčně" style="width:100%">
-          <div style="border-top:1px solid rgba(13,33,37,.15);margin-top:26px;padding-top:18px">
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;gap:16px"><span style="font-size:14.5px;color:#54696b">Ročně navíc jen z ceny za noc</span><b style="font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(22px,2.2vw,28px);white-space:nowrap" data-out="yearlyKc"></b></div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;gap:16px"><span style="font-size:14.5px;color:#54696b">Návratnost modelu Host</span><b style="font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(22px,2.2vw,28px);white-space:nowrap" data-out="paybackTxt"></b></div>
-            <div style="display:flex;justify-content:space-between;align-items:baseline;padding:8px 0;gap:16px"><span style="font-size:14.5px;color:#54696b">Splátku pokryje</span><b style="font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(22px,2.2vw,28px);white-space:nowrap" data-out="coverTxt"></b></div>
-          </div>
-          <p style="margin:14px 0 0;font-size:12px;color:#6d8284;line-height:1.55">Orientační splátka od 13 500 Kč měsíčně u modelu Host přes leasingového partnera, 20 % akontace, 72 splátek. Nepočítáme vyšší obsazenost mimo sezónu ani růst hodnoty nemovitosti. Konkrétní nabídku financování připravíme k poptávce.</p>
+<!-- FAQ + TECH -->
+<section id="faq" class="sec">
+  <div class="wrap">
+    <div class="faqgrid">
+      <div>
+        <div class="eyebrow">Nejčastější otázky</div>
+        <h2 style="margin-top:8px">Na co se ptáte</h2>
+        <div class="faq" style="margin-top:20px">
+          <details><summary>Potřebuju stavební povolení?<span class="circ">+</span></summary><p>Modul je výrobek usazený na zemní vruty, ne klasická stavba. Režim umístění závisí na velikosti modulu a konkrétním pozemku. Projdeme to s vámi před podpisem, patří to k přípravě zakázky.</p></details>
+          <details><summary>Jde modul koupit na splátky?<span class="circ">+</span></summary><p>Ano, přes leasingového partnera. Orientačně od 13 500 Kč měsíčně s 20% akontací u modelu Host. Konkrétní nabídku připravíme společně s poptávkou.</p></details>
+          <details><summary>Vyplatí se pro pronájem?<span class="circ">+</span></summary><p>Podle dat AirDNA zvedá sauna cenu za noc kolem 7 %, vířivka 15 až 35 % a obsazenost roste až o 10 %. Při 15 a více nocích měsíčně vychází Host typicky kolem čtyř až šesti let jen z ceny za noc, u méně vytížených objektů déle. Kalkulačka výše počítá s vašimi čísly.</p></details>
+          <details><summary>Jaké přípojky musím mít?<span class="circ">+</span></summary><p>Elektro 400 V s jističem 3× 25 až 32 A podle sestavy, voda a odpad pro sprchu a vířivku. Samotná káď funguje i bez trvalé přípojky vody.</p></details>
+          <details><summary>Funguje to v zimě?<span class="circ">+</span></summary><p>Modul je celoročně zateplený a rozvody jsou vedené v temperované konstrukci. Zima je pro kontrast nejlepší sezóna.</p></details>
+          <details><summary>Jak probíhá servis?<span class="circ">+</span></summary><p>Roční servisní prohlídka kamen, chlazení a filtrace, první rok v ceně. Na konstrukci dáváme záruku 5 let, na technologie 2 roky.</p></details>
+          <details><summary>Co když se pak přestěhuju?<span class="circ">+</span></summary><p>Modul se dá stejným způsobem zvednout a převézt jinam. Je to jeho přirozená vlastnost, ne kompromis.</p></details>
         </div>
-        <div>
-          <h3 style="margin:0 0 18px;font-family:'Instrument Serif',serif;font-weight:400;font-size:29px">Proč to hostitelům dává smysl</h3>
-          <p style="margin:0 0 14px;font-size:15.5px;line-height:1.62;color:#3c5254"><strong style="color:#0d2125">Vyšší cena za noc.</strong> Sauna s ledovou kádí posouvá objekt do jiné kategorie inzerátu. Neprodáváte nocleh, prodáváte víkendový rituál.</p>
-          <p style="margin:0 0 14px;font-size:15.5px;line-height:1.62;color:#3c5254"><strong style="color:#0d2125">Sezóna celý rok.</strong> Kontrast je nejlepší v zimě a na podzim, přesně když je kalendář nejprázdnější.</p>
-          <p style="margin:0 0 14px;font-size:15.5px;line-height:1.62;color:#3c5254"><strong style="color:#0d2125">Žádná stavba u hostů.</strong> Ráno jeřáb, večer hotovo. Provoz nezastavíte ani na víkend.</p>
-          <p style="margin:0 0 26px;font-size:15.5px;line-height:1.62;color:#3c5254"><strong style="color:#0d2125">Majetek, ne náklad.</strong> Modul není přestavba cizí nemovitosti. Je váš, dá se přestěhovat i prodat.</p>
-          <a href="#konfigurator" data-pick-model="host" style="display:inline-block;background:#f0561d;color:#fff;padding:16px 28px;font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500" data-hover="background:#d9480f;color:#fff">Sestavit modul pro pronájem</a>
+      </div>
+      <div id="technika">
+        <div class="eyebrow">Technika</div>
+        <h2 style="margin-top:8px">Postavené jako stroj</h2>
+        <p class="muted" style="margin-top:14px">Ocelový rám, zateplené panely, rozvody vedené v konstrukci. Stejná technologie, na které stavíme mobilní domy, jen s wellness výbavou.</p>
+        <div class="tech">
+          <div class="row"><span>Konstrukce</span><b>ocelový rám, panely</b></div>
+          <div class="row"><span>Šířka</span><b>2,5 až 3,5 m</b></div>
+          <div class="row"><span>Délka</span><b>4,0 až 9,0 m</b></div>
+          <div class="row"><span>Hmotnost</span><b>3,5 až 8 t</b></div>
+          <div class="row"><span>Založení</span><b>zemní vruty / patky</b></div>
+          <div class="row"><span>Přípojka</span><b>400 V, 3× 25 až 32 A</b></div>
+          <div class="row"><span>Sauna</span><b>90 °C, 6 až 9 kW</b></div>
+          <div class="row"><span>Káď</span><b>3 až 5 °C, UV filtrace</b></div>
+          <div class="row"><span>Výroba</span><b>10 až 14 týdnů</b></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="konfigurator" data-screen-label="Konfigurátor" style="padding:clamp(80px,12vh,150px) 0 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.14);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°06 — Konfigurátor</span><span style="color:#f0561d">Cena konečná</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02">Sestavte si <em style="color:#f0561d">svůj modul.</em></h2>
-      <p style="margin:24px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:58ch">Cena se počítá průběžně a je konečná. Odesláním se k ničemu nezavazujete. Do 24 hodin se ozveme s nejbližším volným výrobním slotem a dalším postupem.</p>
-      <div data-m="stack" style="display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(32px,4vw,72px);align-items:start;margin-top:clamp(40px,6vh,60px);padding-bottom:clamp(60px,9vh,100px)">
-        <div>
-          <div style="margin-bottom:38px">
-            <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b;margin-bottom:16px">1 · Model</span>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div data-pick-model="host" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="model:host" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Celsia Host <span style="font-family:'Martian Mono',monospace;font-size:10px;letter-spacing:.08em;color:#4f93a8">· PRO PRONÁJMY</span></span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">949 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Sauna, káď na otevřené palubě, host mode · 2,5 × 4,0 m</span></span>
-              </div>
-              <div data-pick-model="kontrast" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="model:kontrast" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Celsia Kontrast</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">1 190 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Sauna, ledová káď, venkovní sprcha · 3,0 × 4,0 m</span></span>
-              </div>
-              <div data-pick-model="studio" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="model:studio" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Celsia Studio <span style="font-family:'Martian Mono',monospace;font-size:10px;letter-spacing:.08em;color:#f0561d">· NEJČASTĚJŠÍ VOLBA</span></span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">2 690 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Plus recovery lounge, chiller a smart ovládání · 3,5 × 6,5 m</span></span>
-              </div>
-              <div data-pick-model="grand" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="model:grand" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Celsia Grand</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">3 990 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Plus vířivka pro 5 osob a střešní terasa · 3,5 × 9,0 m</span></span>
-              </div>
-            </div>
-          </div>
-          <div style="margin-bottom:38px">
-            <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b;margin-bottom:16px">2 · Opláštění</span>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div data-pick-clad="thermo" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="clad:thermo" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Thermowood</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">v ceně</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Teplá severská borovice, přirozeně stárne do šeda</span></span>
-              </div>
-              <div data-pick-clad="shou" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="clad:shou" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Opálené dřevo</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">+ 85 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Shou sugi ban, hluboká černá struktura, bezúdržbové</span></span>
-              </div>
-              <div data-pick-clad="zrcadlo" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="clad:zrcadlo" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Zrcadlové sklo</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">+ 140 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Fasádní panely, modul zmizí v zahradě</span></span>
-              </div>
-            </div>
-          </div>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Rychlý kontakt</h4>
+        <div class="contact">
+          <div class="av">°</div>
           <div>
-            <span style="display:block;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b;margin-bottom:16px">3 · Opce</span>
-            <div style="display:flex;flex-direction:column;gap:10px">
-              <div data-row="chiller"><div data-toggle-opt="chiller" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="opt:chiller" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Chiller 24/7</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap" data-out="chillerPrice"></span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Káď drží 3 až 5 °C nonstop, bez ledu a bez čekání</span></span>
-              </div></div>
-              <div data-row="parni"><div data-toggle-opt="parni" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="opt:parni" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Parní kabina</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">+ 240 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Samostatná parní zóna, pouze Studio a Grand</span></span>
-              </div></div>
-              <div data-toggle-opt="drevo" style="display:flex;gap:14px;align-items:flex-start;border:1px solid rgba(13,33,37,.16);padding:16px 18px;cursor:pointer;background:#f4f7f6" data-hover="border-color:#4f93a8">
-                <span style="width:13px;height:13px;border:1px solid rgba(13,33,37,.45);margin-top:5px;flex-shrink:0"><i data-mark="opt:drevo" style="display:block;width:100%;height:100%;background:transparent"></i></span>
-                <span style="flex:1"><span style="display:flex;justify-content:space-between;gap:14px"><span style="font-weight:600">Kamna na dřevo</span><span style="font-family:'Martian Mono',monospace;font-size:12.5px;color:#54696b;white-space:nowrap">+ 38 000 Kč</span></span><span style="display:block;font-size:13.5px;color:#54696b;margin-top:3px">Místo elektrických, s komínem a přívodem vzduchu</span></span>
-              </div>
-            </div>
+            <p>Nezávazná poptávka přes konfigurátor.<br>Odpovídáme do 24 hodin.</p>
+            <a href="#konfigurator" style="color:var(--blue);font-weight:700">Sestavit modul →</a>
           </div>
         </div>
-        <aside data-m="unstick" aria-live="polite" style="position:sticky;top:90px;border:1px solid rgba(13,33,37,.2);background:#f4f7f6;padding:28px">
-          <div style="display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(13,33,37,.14);padding-bottom:14px;margin-bottom:6px">
-            <span style="font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">Výrobní list</span>
-            <span style="font-family:'Martian Mono',monospace;font-size:10.5px;letter-spacing:.1em;color:#f0561d">SERIES 001</span>
-          </div>
-          <div data-sumrows></div>
-          <div style="display:flex;justify-content:space-between;align-items:baseline;padding-top:18px"><span style="font-size:15px">Celkem</span><b style="font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(26px,2.4vw,32px)" data-out="total"></b></div>
-          <p style="margin:6px 0 0;font-size:12.5px;color:#54696b;line-height:1.5">Cena vč. DPH, dopravy a usazení jeřábem do 150 km od Prahy. Konečná, po podpisu se nemění. Záloha 30 %.</p>
-          <form action="https://formsubmit.co/hello@gallerypoint.cz" method="POST" style="margin-top:26px;display:grid;gap:12px">
-            <input type="hidden" name="_subject" value="Poptávka CELSIA">
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="Konfigurace" value="" data-out-value="conf">
-            <input type="text" name="Jméno" placeholder="Jméno a příjmení" required style="width:100%;box-sizing:border-box;background:#fff;border:1px solid rgba(13,33,37,.28);color:#0d2125;padding:13px 14px;font:inherit;font-size:15px">
-            <input type="tel" name="Telefon" placeholder="Telefon" required style="width:100%;box-sizing:border-box;background:#fff;border:1px solid rgba(13,33,37,.28);color:#0d2125;padding:13px 14px;font:inherit;font-size:15px">
-            <input type="email" name="Email" placeholder="E-mail" required style="width:100%;box-sizing:border-box;background:#fff;border:1px solid rgba(13,33,37,.28);color:#0d2125;padding:13px 14px;font:inherit;font-size:15px">
-            <input type="text" name="Místo" placeholder="Obec, kde bude modul stát" style="width:100%;box-sizing:border-box;background:#fff;border:1px solid rgba(13,33,37,.28);color:#0d2125;padding:13px 14px;font:inherit;font-size:15px">
-            <textarea name="Zpráva" placeholder="Poznámka, termín, dotaz" style="width:100%;box-sizing:border-box;background:#fff;border:1px solid rgba(13,33,37,.28);color:#0d2125;padding:13px 14px;font:inherit;font-size:15px;min-height:74px;resize:vertical"></textarea>
-            <button type="submit" style="background:#f0561d;color:#fff;border:0;padding:16px;font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;cursor:pointer" data-hover="background:#ff6a30">Ověřit volný slot</button>
-            <p style="margin:0;font-size:11.5px;color:#54696b;line-height:1.5">Odesláním souhlasíte se zpracováním údajů pro vyřízení poptávky. Nic víc s nimi neděláme.</p>
-          </form>
-        </aside>
+      </div>
+      <div>
+        <h4>Modely</h4>
+        <a href="#konfigurator" data-goto-model="host">Celsia Host</a>
+        <a href="#konfigurator" data-goto-model="kontrast">Celsia Kontrast</a>
+        <a href="#konfigurator" data-goto-model="studio">Celsia Studio</a>
+        <a href="#konfigurator" data-goto-model="grand">Celsia Grand</a>
+      </div>
+      <div>
+        <h4>Informace</h4>
+        <a href="#koncept">Koncept</a>
+        <a href="#pronajem">Pro pronájem</a>
+        <a href="#garance">Garance</a>
+        <a href="#technika">Technika</a>
+        <a href="#faq">Otázky</a>
+      </div>
+      <div>
+        <h4>Výroba</h4>
+        <p>Navrženo a vyrobeno v Česku.<br>Doprava a usazení jeřábem do 150 km od Prahy v ceně.</p>
       </div>
     </div>
-  </section>
+    <div class="badges">
+      <span><b>Series 001</b> · Ročník 2026</span>
+      <span><b>5 let</b> záruka na konstrukci</span>
+      <span><b>30 dní</b> na vrácení</span>
+      <span><b>1 den</b> montáž na pozemku</span>
+    </div>
+    <div class="legal">
+      <span>© 2026 Celsia · Prefabrikované wellness moduly</span>
+      <span class="lang" style="display:inline"><a href="index.html" class="on" style="display:inline">CZ</a> / <a href="en.html" style="display:inline">EN</a></span>
+    </div>
+  </div>
+</footer>
 
-  <section id="garance" data-screen-label="Garance" style="background:#edf4f4;color:#0d2125;padding:clamp(72px,11vh,130px) 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.2);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°07 — Garance</span><span>Riziko neseme my</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(33px,5.4vw,80px);line-height:1.02">Riziko <em style="color:#f0561d">neseme my.</em></h2>
-      <p style="margin:24px 0 0;font-size:17.5px;line-height:1.65;color:#3c5254;max-width:56ch">Kupujete věc za víc než milion, kterou jste si nemohli nikde osahat. Tak to otočíme. Vyzkoušíte ji doma a rozhodnete se potom.</p>
-      <div data-m="stack" style="display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(24px,3vw,48px);margin-top:clamp(40px,6vh,60px)">
-        <div style="border-top:2px solid #f0561d;padding-top:20px">
-          <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">01</span>
-          <h3 style="margin:14px 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:26px">30 dní doma</h3>
-          <p style="margin:0;font-size:15px;line-height:1.62;color:#3c5254">Saunujte, otužujte se, pozvěte návštěvu. Pokud vám modul do 30 dnů od usazení nesedne, odvezeme ho a vrátíme kupní cenu. Jediné, co jde za vámi, je zpáteční doprava.</p>
-        </div>
-        <div style="border-top:2px solid #f0561d;padding-top:20px">
-          <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">02</span>
-          <h3 style="margin:14px 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:26px">Termín, nebo sleva</h3>
-          <p style="margin:0;font-size:15px;line-height:1.62;color:#3c5254">Ve smlouvě máte datum usazení. Za každý započatý týden našeho zpoždění jde z ceny 10 000 Kč dolů.</p>
-        </div>
-        <div style="border-top:2px solid #f0561d;padding-top:20px">
-          <span style="font-family:'Martian Mono',monospace;font-size:12px;color:#f0561d">03</span>
-          <h3 style="margin:14px 0 10px;font-family:'Instrument Serif',serif;font-weight:400;font-size:26px">Pevná cena</h3>
-          <p style="margin:0;font-size:15px;line-height:1.62;color:#3c5254">Cena z konfigurátoru je cena na faktuře. Žádné vícepráce, žádné palivové příplatky, žádná překvapení.</p>
-        </div>
-      </div>
-      <p style="margin:20px 0 0;font-size:12.5px;color:#6d8284">Přesné znění garancí je součástí smlouvy, kterou dostanete před podpisem.</p>
-      <div style="margin-top:clamp(60px,9vh,100px);border:1px solid #0d2125;outline:1px solid #0d2125;outline-offset:4px;padding:clamp(36px,6vw,72px);text-align:center">
-        <p style="margin:0;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#f0561d">Series 001 · Ročník 2026</p>
-        <h2 style="margin:16px auto 18px;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(29px,4.6vw,64px);line-height:1.04;max-width:18ch">Deset číslovaných kusů ročně.</h2>
-        <p style="margin:0 auto;font-size:16px;line-height:1.65;color:#3c5254;max-width:62ch;text-wrap:pretty">Každý modul staví jedna parta, jeden kus po druhém. Víc než deset jich za rok poctivě nevyrobíme. Každý nese číslovanou plaketu, výrobní list s podpisy party a prioritní servisní linku. Až se ročník naplní, další kusy jdou do ročníku 2027.</p>
-        <a href="#konfigurator" style="display:inline-block;margin-top:30px;background:#f0561d;color:#fff;padding:16px 28px;font-family:'Martian Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500" data-hover="background:#d9480f;color:#fff">Ověřit volný slot</a>
-      </div>
-    </div>
-  </section>
+<a href="#konfigurator" class="btn btn-blue fab">Sestavit modul</a>
 
-  <section id="proces" data-screen-label="Proces" style="padding:clamp(80px,12vh,150px) 0 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.14);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°08 — Jak to probíhá</span><span>10–14 týdnů výroba</span>
-      </div>
-      <h2 style="margin:26px 0 clamp(36px,6vh,56px);font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4.6vw,64px);line-height:1.04">Od poptávky k první sauně.</h2>
-      <div data-m="stack2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,2.5vw,40px)">
-        <div style="border-top:1px solid rgba(13,33,37,.25);padding-top:18px">
-          <span style="font-family:'Instrument Serif',serif;font-size:44px;color:#f0561d">01</span>
-          <h3 style="margin:12px 0 8px;font-size:18px;font-weight:600">Konfigurace</h3>
-          <p style="margin:0;font-size:14px;line-height:1.6;color:#54696b">Sestavíte modul, projdeme spolu pozemek, přípojky a přístup pro jeřáb. Záloha 30 % rezervuje výrobní slot.</p>
-        </div>
-        <div style="border-top:1px solid rgba(13,33,37,.25);padding-top:18px">
-          <span style="font-family:'Instrument Serif',serif;font-size:44px;color:#f0561d">02</span>
-          <h3 style="margin:12px 0 8px;font-size:18px;font-weight:600">Výroba</h3>
-          <p style="margin:0;font-size:14px;line-height:1.6;color:#54696b">10 až 14 týdnů v hale. Modul vzniká kompletně pod střechou, včetně rozvodů a interiéru.</p>
-        </div>
-        <div style="border-top:1px solid rgba(13,33,37,.25);padding-top:18px">
-          <span style="font-family:'Instrument Serif',serif;font-size:44px;color:#f0561d">03</span>
-          <h3 style="margin:12px 0 8px;font-size:18px;font-weight:600">Usazení</h3>
-          <p style="margin:0;font-size:14px;line-height:1.6;color:#54696b">Přeprava na podvalníku, usazení jeřábem na zemní vruty, připojení. Jeden den na pozemku.</p>
-        </div>
-        <div style="border-top:1px solid rgba(13,33,37,.25);padding-top:18px">
-          <span style="font-family:'Instrument Serif',serif;font-size:44px;color:#f0561d">04</span>
-          <h3 style="margin:12px 0 8px;font-size:18px;font-weight:600">První protokol</h3>
-          <p style="margin:0;font-size:14px;line-height:1.6;color:#54696b">Zaškolení, nastavení aplikace a první společný kontrast. Od té chvíle jedete sami.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="technika" data-screen-label="Technika a FAQ" style="padding:clamp(80px,12vh,150px) 0">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="display:flex;flex-wrap:wrap;gap:4px 18px;justify-content:space-between;align-items:baseline;border-top:1px solid rgba(13,33,37,.14);padding-top:16px;font-family:'Martian Mono',monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#54696b">
-        <span>N°09 — Technika</span><span>Ocelový rám</span>
-      </div>
-      <h2 style="margin:26px 0 0;font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(30px,4.6vw,64px);line-height:1.04">Postavené <em style="color:#4f93a8">jako stroj.</em></h2>
-      <p style="margin:22px 0 0;font-size:16.5px;line-height:1.65;color:#3c5254;max-width:58ch">Ocelový rám, zateplené panely, rozvody vedené v konstrukci. Stejná technologie, na které stavíme mobilní domy, jen s wellness výbavou.</p>
-      <div data-m="stack2" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(13,33,37,.12);border:1px solid rgba(13,33,37,.12);margin:clamp(36px,5vh,52px) 0 clamp(44px,7vh,64px)">
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Konstrukce</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">ocelový rám, panely</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Šířka</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">3,0 až 3,5 m</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Délka</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">4,0 až 9,0 m</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Hmotnost</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">4 až 8 t</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Založení</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">zemní vruty / patky</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Přípojka</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px">400 V, 3× 25 až 32 A</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Sauna</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px;color:#f0561d">90 °C, 6 až 9 kW</b></div>
-        <div style="background:#fff;padding:20px"><span style="display:block;font-size:12.5px;color:#54696b;margin-bottom:6px">Káď</span><b style="font-family:'Martian Mono',monospace;font-weight:500;font-size:13.5px;color:#4f93a8">3 až 5 °C, UV filtrace</b></div>
-      </div>
-      <div style="max-width:860px">
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Potřebuju stavební povolení?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Modul je výrobek usazený na zemní vruty, ne klasická stavba. Režim umístění závisí na velikosti modulu a konkrétním pozemku. Projdeme to s vámi před podpisem, patří to k přípravě zakázky.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Jde modul koupit na splátky?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Ano, přes leasingového partnera. Orientačně od 13 500 Kč měsíčně s 20% akontací u modelu Host. Konkrétní nabídku připravíme společně s poptávkou.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Vyplatí se pro pronájem?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Podle dat AirDNA zvedá sauna cenu za noc kolem 7 %, vířivka 15 až 35 % a obsazenost roste až o 10 %. Čím víc nocí prodáváte, tím rychleji se modul splatí. Při 15 a více nocích měsíčně vychází Host typicky kolem čtyř až šesti let jen z ceny za noc, u méně vytížených objektů déle. Kalkulačka výše počítá s vašimi čísly.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Jaké přípojky musím mít?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Elektro 400 V s jističem 3× 25 až 32 A podle sestavy, voda a odpad pro sprchu a vířivku. Samotná káď funguje i bez trvalé přípojky vody.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Funguje to v zimě?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Modul je celoročně zateplený a rozvody jsou vedené v temperované konstrukci. Zima je pro kontrast nejlepší sezóna.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Jak probíhá servis?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Roční servisní prohlídka kamen, chlazení a filtrace, první rok v ceně. Na konstrukci dáváme záruku 5 let, na technologie 2 roky.</p>
-        </details>
-        <details style="border-top:1px solid rgba(13,33,37,.12);border-bottom:1px solid rgba(13,33,37,.12)">
-          <summary style="cursor:pointer;padding:20px 0;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:20px;font-size:16.5px">Co když se pak přestěhuju?<span aria-hidden="true" style="font-family:'Martian Mono',monospace;color:#54696b">+</span></summary>
-          <p style="margin:0;padding-bottom:20px;font-size:15px;line-height:1.62;color:#3c5254;max-width:70ch">Modul se dá stejným způsobem zvednout a převézt jinam. Je to jeho přirozená vlastnost, ne kompromis.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <footer data-screen-label="Patička" style="border-top:1px solid rgba(13,33,37,.14);padding:clamp(48px,7vh,72px) 0 40px;overflow:hidden">
-    <div style="max-width:1360px;margin:0 auto;padding:0 clamp(20px,4vw,56px)">
-      <div style="font-family:'Unbounded',sans-serif;font-size:clamp(40px,8.6vw,132px);line-height:1;white-space:nowrap"><span style="font-weight:200">c</span><span style="font-weight:280">e</span><span style="font-weight:380">l</span><span style="font-weight:520">s</span><span style="font-weight:700">i</span><span style="font-weight:900">a</span></div>
-      <div style="display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;margin-top:clamp(32px,5vh,48px);border-top:1px solid rgba(13,33,37,.12);padding-top:26px">
-        <p style="margin:0;font-size:14px;color:#54696b">Prefabrikované wellness moduly. Navrženo a vyrobeno v Česku.</p>
-        <a href="#konfigurator" style="font-size:14px">Nezávazná poptávka →</a>
-        <p style="margin:0;font-family:'Martian Mono',monospace;font-size:12px;color:#54696b">© 2026 Celsia · Series 001</p>
-      </div>
-    </div>
-  </footer>
-</div>
-<script>window.CELSIA={locale:"cs-CZ",fmt:function(n){return n.toLocaleString("cs-CZ")+" K\u010d"},included:"v cen\u011b",stdRow:"ve standardu",stdPrice:"VE STANDARDU",chillerAdd:"+ 96 000 K\u010d",total:"Celkem",years:"roku",lease:13500,nightWord:function(c){return c+(c>=5?" noc\u00ed":" noci")},models:{host:{name:"Celsia Host",base:949000,chillerStd:false},kontrast:{name:"Celsia Kontrast",base:1190000,chillerStd:false},studio:{name:"Celsia Studio",base:2690000,chillerStd:true},grand:{name:"Celsia Grand",base:3990000,chillerStd:true}},options:{chiller:{label:"Chiller 24/7",price:96000,models:["host","kontrast"]},parni:{label:"Parn\u00ed kabina",price:240000,models:["studio","grand"]},drevo:{label:"Kamna na d\u0159evo",price:38000,models:["host","kontrast","studio","grand"]}},cladding:{thermo:{label:"Thermowood",price:0},shou:{label:"Op\u00e1len\u00e9 d\u0159evo",price:85000},zrcadlo:{label:"Zrcadlov\u00e9 sklo",price:140000}}};</script>
+<script>
+window.CELSIA={locale:"cs-CZ",fmt:function(n){return n.toLocaleString("cs-CZ")+" Kč"},included:"v ceně",stdRow:"ve standardu",stdPrice:"ve standardu",chillerAdd:"+ 96 000 Kč",total:"Celkem",years:"roku",lease:13500,nightWord:function(c){return c+(c>=5?" nocí":" noci")},models:{host:{name:"Celsia Host",base:949000,chillerStd:false},kontrast:{name:"Celsia Kontrast",base:1190000,chillerStd:false},studio:{name:"Celsia Studio",base:2690000,chillerStd:true},grand:{name:"Celsia Grand",base:3990000,chillerStd:true}},options:{chiller:{label:"Chiller 24/7",price:96000,models:["host","kontrast"]},parni:{label:"Parní kabina",price:240000,models:["studio","grand"]},drevo:{label:"Kamna na dřevo",price:38000,models:["host","kontrast","studio","grand"]}},cladding:{thermo:{label:"Thermowood",price:0},shou:{label:"Opálené dřevo",price:85000},zrcadlo:{label:"Zrcadlové sklo",price:140000}}};
+</script>
 <script src="script.js"></script>
 </body>
 </html>

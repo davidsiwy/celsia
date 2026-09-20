@@ -1,5 +1,6 @@
 (function(){
   var C = window.CELSIA;
+  var ACCENT = '#2f9ff0';
   document.querySelectorAll('[data-hover]').forEach(function(el){
     var base = el.getAttribute('style') || '', hov = el.getAttribute('data-hover');
     el.addEventListener('mouseenter', function(){ el.setAttribute('style', base + ';' + hov); });
@@ -7,7 +8,7 @@
   });
   var state = { model: 'studio', clad: 'thermo', opts: { chiller: false, parni: false, drevo: false }, upl: 1200, nights: 16 };
   function fmt(n){ return C.fmt(n); }
-  function set(k, v){ var el = document.querySelector('[data-out="' + k + '"]'); if (el) el.textContent = v; }
+  function set(k, v){ document.querySelectorAll('[data-out="' + k + '"]').forEach(function(el){ el.textContent = v; }); }
   function setPressed(attr, test){
     document.querySelectorAll('[' + attr + ']').forEach(function(el){
       el.setAttribute('aria-pressed', test(el.getAttribute(attr)) ? 'true' : 'false');
@@ -44,7 +45,7 @@
       if (p[0] === 'model') on = state.model === p[1];
       if (p[0] === 'clad') on = state.clad === p[1];
       if (p[0] === 'opt') on = p[1] === 'chiller' ? (state.opts.chiller && !model.chillerStd) : state.opts[p[1]];
-      el.style.background = on ? '#f0561d' : 'transparent';
+      el.style.background = on ? ACCENT : 'transparent';
     });
     setPressed('data-pick-model', function(k){ return state.model === k; });
     setPressed('data-pick-clad', function(k){ return state.clad === k; });
@@ -53,20 +54,17 @@
       return !!state.opts[k];
     });
     var rowCh = document.querySelector('[data-row="chiller"]');
-    if (rowCh){ rowCh.style.opacity = model.chillerStd ? '.38' : ''; rowCh.style.pointerEvents = model.chillerStd ? 'none' : ''; }
+    if (rowCh){ rowCh.style.opacity = model.chillerStd ? '.45' : ''; rowCh.style.pointerEvents = model.chillerStd ? 'none' : ''; }
     var rowPa = document.querySelector('[data-row="parni"]');
-    if (rowPa){ var ok = C.options.parni.models.indexOf(state.model) >= 0; rowPa.style.opacity = ok ? '' : '.38'; rowPa.style.pointerEvents = ok ? '' : 'none'; }
+    if (rowPa){ var ok = C.options.parni.models.indexOf(state.model) >= 0; rowPa.style.opacity = ok ? '' : '.45'; rowPa.style.pointerEvents = ok ? '' : 'none'; }
     set('chillerPrice', model.chillerStd ? C.stdPrice : C.chillerAdd);
     var sum = document.querySelector('[data-sumrows]');
     if (sum){
       sum.innerHTML = '';
       rows.forEach(function(r){
         var d = document.createElement('div');
-        d.setAttribute('style', 'display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid rgba(13,33,37,.08);font-size:14.5px');
         var a = document.createElement('span'); a.textContent = r.label;
-        var b = document.createElement('span');
-        b.setAttribute('style', "font-family:'Martian Mono',monospace;font-size:12.5px;white-space:nowrap;color:#3c5254");
-        b.textContent = r.price;
+        var b = document.createElement('span'); b.textContent = r.price;
         d.appendChild(a); d.appendChild(b); sum.appendChild(d);
       });
     }
@@ -82,14 +80,14 @@
     set('paybackTxt', payback.toLocaleString(C.locale, { maximumFractionDigits: 1 }) + ' ' + C.years);
     set('coverTxt', C.nightWord(cover));
   }
+  function pickModel(m){
+    Object.keys(C.options).forEach(function(k){ if (C.options[k].models.indexOf(m) < 0) state.opts[k] = false; });
+    if (C.models[m].chillerStd) state.opts.chiller = false;
+    state.model = m; render();
+  }
   document.querySelectorAll('[data-pick-model]').forEach(function(el){
     activate(el);
-    el.addEventListener('click', function(){
-      var m = el.getAttribute('data-pick-model');
-      Object.keys(C.options).forEach(function(k){ if (C.options[k].models.indexOf(m) < 0) state.opts[k] = false; });
-      if (C.models[m].chillerStd) state.opts.chiller = false;
-      state.model = m; render();
-    });
+    el.addEventListener('click', function(){ pickModel(el.getAttribute('data-pick-model')); });
   });
   document.querySelectorAll('[data-pick-clad]').forEach(function(el){
     activate(el);
@@ -106,5 +104,28 @@
   document.querySelectorAll('[data-slider]').forEach(function(el){
     el.addEventListener('input', function(){ state[el.getAttribute('data-slider')] = +el.value; render(); });
   });
+  // karty modelu a odkazy v patce predvoli model v konfiguratoru
+  document.querySelectorAll('[data-goto-model]').forEach(function(el){
+    el.addEventListener('click', function(){
+      var m = el.getAttribute('data-goto-model');
+      if (C.models[m]) pickModel(m);
+    });
+  });
+  // sipky u horizontalnich karuselu
+  function scrollBy(name, dir){
+    var box = document.querySelector('[data-scroll="' + name + '"]');
+    if (!box) return;
+    var card = box.firstElementChild;
+    var step = card ? card.getBoundingClientRect().width + 16 : 300;
+    box.scrollBy({ left: dir * step, behavior: 'smooth' });
+  }
+  document.querySelectorAll('[data-scroll-prev]').forEach(function(b){ b.addEventListener('click', function(){ scrollBy(b.getAttribute('data-scroll-prev'), -1); }); });
+  document.querySelectorAll('[data-scroll-next]').forEach(function(b){ b.addEventListener('click', function(){ scrollBy(b.getAttribute('data-scroll-next'), 1); }); });
+  // mobilni menu
+  var burger = document.querySelector('[data-burger]'), mnav = document.querySelector('[data-mnav]');
+  if (burger && mnav){
+    burger.addEventListener('click', function(){ mnav.classList.toggle('open'); });
+    mnav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ mnav.classList.remove('open'); }); });
+  }
   render();
 })();

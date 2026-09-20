@@ -3,16 +3,19 @@
 Statický web, GitHub Pages servíruje kořen repa.
 
 - `index.html` čeština, `en.html` angličtina
-- Světlý design, styly jsou inline v HTML (tak je exportuje návrhový nástroj, ať se to při dalším exportu netluče)
-- Responsivita: `<style>` blok v `<head>` + atributy `data-m` na prvcích (`stack`, `stack2`, `stats`, `trow`, `zona`, `nav`, `hide`, `unstick`, `cta`), breakpointy 1040 a 760 px
-- `script.js` konfigurátor, kalkulačka návratnosti, hover stavy, klávesnice (Enter / mezerník) a `aria-pressed`
+- `style.css` společné styly (design systém: bílé a černé sekce, modrý akcent `--blue`, nadpisy Unbounded, text Manrope, rádius 16 px, pill tlačítka)
+- `script.js` konfigurátor, kalkulačka návratnosti, předvolba modelu z karet (`data-goto-model`), šipky karuselů (`data-scroll`), mobilní menu, klávesnice a `aria-pressed`
 - Ceny, modely a texty konfigurátoru: objekt `window.CELSIA` na konci každé HTML stránky (každý jazyk má vlastní)
 - `img/` fotografie
 - Formulář: FormSubmit na hello@gallerypoint.cz, vyměnit až bude doména. První odeslání vyžaduje potvrzení adresy.
 
-## Pozor při dalším exportu z návrhu
+## Sekce (shora dolů)
 
-Export přepíše `index.html`, `en.html` i `script.js`. Co je potřeba po exportu vrátit:
+Hero → dva promo bannery → Modely (karty s půdorysy a cenou) → Často vás zajímá (bento) → Jak vypadá usazení + 4 kroky → 7 důvodů → Koncept + čísla → Co je uvnitř → Srovnání přístavba vs modul → Pro koho → Series 001 → Pro pronájem (kalkulačka) → Konfigurátor + V ceně → Garance → Otázky + Technika → patička.
 
-1. `<title>` bez stupně (logotyp je "celsia", ne "CELSIA°")
-2. V `script.js` funkce `activate()` a `setPressed()` — dodávají konfigurátoru `role="button"`, `tabindex`, klávesnici a `aria-pressed`
+## Co doplnit, až bude
+
+- Fotky: zatím jen dva rendery, používají se opakovaně (bento, důvody, zóny). Doplnit detaily kádě, sauny, recovery, usazení jeřábem.
+- Video usazení do sekce „Jak vypadá usazení modulu".
+- Reference a hodnocení, až budou první instalace.
+- Telefon a e-mail do patičky, až bude doména.
